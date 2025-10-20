@@ -1,0 +1,59 @@
+@import '../global/variables.css';
+
+.p-price {
+  background: url('/public/images/price-bg.jpg') no-repeat center center / cover;
+  padding-block: 60px;
+}
+
+.p-price__heading {
+  font-family: var(--font-jp--serif);
+  font-weight: var(--fw-semibold);
+  text-align: center;
+  color: var(--color-white);
+}
+.p-price-heading__title {
+  font-size: fz(24, 36);
+  letter-spacing: 0.36em;
+}
+.p-price-heading__description {
+  font-size: fz(14, 16);
+  letter-spacing: 0.18em;
+}
+.p-price-nav__list {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 15px;
+  row-gap: 42px;
+}
+
+.p-price-nav__item {
+  background-color: var(--color-white);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.p-price-nav__link {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    aspect-ratio: 160/102;
+  }
+}
+.p-price-nav__link-text {
+  font-size: fz(14, 16);
+  letter-spacing: 0.18em;
+  text-align: center;
+  padding: 8px 18px;
+  height: 100%;
+}
+
+.p-price__blocks
+  {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-block-start: 52px;
+  }

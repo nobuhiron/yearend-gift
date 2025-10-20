@@ -1,0 +1,30 @@
+.c-tips-item {
+  color: #1a1a1a;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.c-tips-item__heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: var(--color-sub3);
+}
+
+.c-tips-item__title {
+  font-family: var(--font-jp--sanserif);
+  font-weight: var(--fw-semibold);
+  font-size: fz(20, 22);
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+
+.c-tips-item__description {
+    font-family: var(--font-jp--sanserif);
+  font-weight: var(--fw-semibold);
+  font-size: fz(14, 15);
+  line-height: 1.62;
+  padding-inline: 20px;
+  padding-block: 18px 20px;
+  background-color: #f6f5f2;
+}

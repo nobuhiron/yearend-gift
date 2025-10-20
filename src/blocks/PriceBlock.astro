@@ -1,0 +1,30 @@
+---
+import ItemCard from '../components/ItemCard.astro';
+import { priceItemData } from '../data/priceItemData';
+const { title, imgBase } = Astro.props;
+---
+
+<li class='p-price-block'>
+  <header class='p-price-block__header'>
+    <div class='p-price-block__header-img'>
+      <img src={`${imgBase}price_01.png`} alt='価格で選ぶ' />
+    </div>
+    <h3 class='p-price-block__header-title'>
+      {title}おすすめアイテム
+    </h3>
+  </header>
+  <div class='p-cards'>
+    <ul class='p-cards__list'>
+      {
+        priceItemData.map((item) => (
+          <ItemCard
+            imgUrl={item.imgUrl}
+            title={item.title}
+            description={item.description}
+            price={item.price}
+          />
+        ))
+      }
+    </ul>
+  </div>
+</li>

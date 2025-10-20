@@ -44,3 +44,43 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+### pages
+
+-'index.astro'
+
+### Layouts
+
+-'Layout.astro'
+-'Footer.astro'
+
+### sections
+
+-'Hero.astro'
+-'Nav.astro'
+-'Ranking.astro'
+-'Tips.astro'
+-'Wrapping.astro'
+-'Reasons.astro'
+-'Prices.astro'
+-'Sweets.astro'
+-'Faq.astro'
+
+### blocks
+
+-'Priceblock.astro'
+
+### components
+
+-'NavItem.astro'
+-'RankingCard.astro'
+-'TipsItem.astro'
+-'HowtoCard.astro'
+-'ReasonCard.astro'
+-'ItemCard.astro'
+-'ItemCardButton.astro'
+-'faqitem.astro'
+-'SectionTitle.astro'
+-'PriceBlockTitle.astro'
+
+### data

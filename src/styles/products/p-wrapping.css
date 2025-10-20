@@ -1,0 +1,64 @@
+.p-wrapping-header {
+  display: grid;
+  grid-template-rows: 1fr;
+}
+.p-wrapping-header__title {
+  font-family: var(--font-jp--serif);
+  font-weight: var(--fw-semibold);
+  font-size: fz(24, 36);
+  text-align: center;
+  letter-spacing: 0.27em;
+  color: var(--color-sub);
+}
+.p-wrapping-header__image-lower {
+  padding-block-start: 16px;
+}
+
+.p-wrapping-card {
+  display: grid;
+  grid-template-rows: 1fr;
+  row-gap: 10px;
+}
+.p-wrapping-card__header {
+  display: grid;
+  grid-template-columns: 15.8% 1fr;
+  grid-template-rows: repeat(2, auto);
+  grid-column: 1/3;
+}
+.p-wrapping-card__description {
+  grid-column: 1/3;
+}
+.p-wrapping-card__image {
+  grid-column: 1/3;
+  grid-row: 2/3;
+}
+.p-wrapping-card__link-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  grid-column: 1/3;
+  grid-row: 3/4;
+}
+.p-wrapping-card__link {
+  background-color: var(--color-sub3);
+  color: var(--color-white);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: 15px;
+  position: relative;
+  &._noshi {
+    background-color: var(--color-sub4);
+  }
+  &::before {
+    content: url('/public/images/svg/shevron-right.svg');
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 12px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+  }
+}

@@ -1,0 +1,40 @@
+.c-item-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.c-item-card__title {
+  font-family: var(--font-jp--serif);
+  font-weight: var(--fw-semibold);
+  font-size: fz(18, 20);
+}
+
+.c-item-card__description {
+  font-size: 14px;
+  font-weight: var(--fw-regular);
+  font-family: var(--font-jp--serif);
+  margin-block-start: 10px;
+}
+
+.c-item-card__line {
+  margin-block-start: 12px;
+}
+.c-item-card__price {
+  color: #563d0d;
+  font-family: var(--font-jp--serif);
+  font-weight: var(--fw-semibold);
+  font-size: 24px;
+  margin-block-start: 5px;
+  text-align: right;
+}
+.c-item-card__link {
+  display: block;
+  background-color: var(--color-sub);
+  color: var(--color-white);
+  font-family: var(--font-jp--serif);
+  text-align: center;
+  padding-block: 15px;
+  border-radius: 100px;
+  margin-block-start: 20px;
+}

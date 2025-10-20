@@ -1,0 +1,30 @@
+@import '../global/index.css';
+
+.p-tips__inner {
+  background-color: var(--color-white);
+  padding-block: 40px;
+  padding-inline: 20px;
+}
+
+.p-tips__title {
+  font-family: var(--font-jp--serif);
+  font-weight: var(--fw-semibold);
+  font-size: fz(24, 36);
+  text-align: center;
+  letter-spacing: 0.27em;
+}
+
+.p-tips__heading-img--lower {
+  padding-block-start: 15px;
+}
+
+.p-tips__list {
+  margin-block-start: 36px;
+  display: grid;
+  gap: 20px;
+  @media (--md) {
+    grid-template-columns: repeat(2, 1fr);
+    columns-gap: 40px;
+    row-gap: 24px;
+  }
+}

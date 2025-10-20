@@ -1,0 +1,16 @@
+---
+const {title, description} = Astro.props;
+---
+<details class='c-faq-item'>
+  <summary class='c-faq-item__heading'>
+    <span class='c-faq-item__number'>Q</span>
+    <h3 class='c-faq-item__title'>{title}</h3>
+    <span class='c-faq-item__button'>
+        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"></svg>
+    </span>
+  </summary>
+  <div class='c-faq-item__content'>
+    <span class='c-faq-item__number'>A</span>
+    <p class='c-faq-item__description'>{description}</p>
+  </div>
+</details>

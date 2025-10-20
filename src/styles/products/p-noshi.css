@@ -1,0 +1,61 @@
+@import '../global/variables.css';
+
+.p-noshi {
+}
+
+.p-noshi-header__title {
+  font-family: var(--font-jp--serif);
+  font-weight: var(--fw-semibold);
+  font-size: fz(24, 36);
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+.p-noshi-header__description {
+  font-weight: var(--fw-semibold);
+  font-size: fz(14, 16);
+  text-align: center;
+  span {
+    color: red;
+    text-decoration: underline;
+  }
+}
+
+.p-noshi__cases {
+  display: grid;
+  grid-template-rows: 1fr;
+  row-gap: 10px;
+}
+.p-noshi-case {
+  background-color: #f6f5f2;
+  padding: 16px 19px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+  border-radius: 12px;
+}
+.p-noshi-case__heading {
+  display: grid;
+  grid-template-rows: 1fr;
+  row-gap: 10px;
+}
+.p-noshi-case__title {
+  background-color: var(--color-sub3);
+  border-radius: 100px;
+  color: var(--color-white);
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+
+.p-noshi__close {
+  background-color: var(--color-sub);
+}
+.p-noshi__close-button {
+  background-color: var(--color-sub);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}

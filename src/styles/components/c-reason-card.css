@@ -1,0 +1,22 @@
+.c-reason-card {
+  padding: 24px 20px;
+  border: 1px solid var(--color-sub);
+  border-radius: 8px;
+}
+.c-reason-card__title {
+  font-family: var(--font-jp--serif);
+  font-weight: var(--fw-semibold);
+  font-size: fz(20, 28);
+}
+.c-reason-card__index {
+  color: var(--color-sub3);
+  font-family: var(--font-en);
+}
+.c-reason-card__image {
+  border-radius: 8px;
+  overflow: hidden;
+}
+.c-reason-card__description-text {
+  font-weight: var(--fw-medium);
+  font-size: fz(14, 15);
+}

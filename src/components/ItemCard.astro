@@ -1,0 +1,21 @@
+---
+const { imgUrl, title, description, price } = Astro.props;
+const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
+---
+
+<li class='c-item-card'>
+  <div class='c-item-card__image'>
+    <img src={`${imgBase}/${imgUrl}`} alt='価格で選ぶ' />
+  </div>
+  <div class='c-item-card__content'>
+    <h4 class='c-item-card__title'>{title}</h4>
+    <p class='c-item-card__description'>{description}</p>
+    <div class='c-item-card__line'>
+      <img src={`${imgBase}/svg/line.svg`} alt='line' />
+    </div>
+    <div class='c-item-card__price'>
+      {price}<span class='c-item-card__price-amount'>(税込)</span>
+    </div>
+    <a href='#' class='c-item-card__link'>詳しく見る</a>
+  </div>
+</li>

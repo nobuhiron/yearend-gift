@@ -10,5 +10,11 @@
   },
   "dependencies": {
     "astro": "^5.14.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss-custom-media": "^11.0.6",
+    "postcss-functions": "^4.0.2",
+    "postcss-nested": "^7.0.2"
   }
 }

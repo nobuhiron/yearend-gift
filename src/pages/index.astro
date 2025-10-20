@@ -1,11 +1,24 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Hero from '../sections/Hero.astro';
+import Nav from '../sections/Nav.astro';
+import Tips from '../sections/Tips.astro';
+import Wrapping from '../sections/Wrapping.astro';
+import Reasons from '../sections/Reasons.astro';
+import Price from '../sections/Price.astro';
+import Sweets from '../sections/Sweets.astro';
+import Faq from '../sections/Faq.astro';
+import Footer from '../layouts/Footer.astro';
 ---
 
-<Layout>
-	<Welcome />
+<Layout title='森半のお歳暮'>
+  <Hero />
+  <Nav />
+  <Tips />
+  <Wrapping />
+  <Reasons />
+  <Price />
+  <Sweets />
+  <Faq />
+  <Footer />
 </Layout>

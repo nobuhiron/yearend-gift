@@ -1,0 +1,52 @@
+---
+import PriceBlock from '../blocks/PriceBlock.astro';
+import { priceBlockData } from '../data/priceBlockData';
+const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
+---
+
+<section class='p-price'>
+  <div class='l-container'>
+    <header class='p-price__heading'>
+      <h2 class='p-price-heading__title'>価格で選ぶ</h2>
+      <p class='p-price-heading__description'>
+        低価格から高級ギフトまで価格別におすすめの
+        お歳暮・冬ギフトをご用意しています。
+      </p>
+    </header>
+    <nav class='p-price__nav'>
+      <ul class='p-price-nav__list'>
+        <li class='p-price-nav__item'>
+          <a href='#' class='p-price-nav__link'>
+            <img src={`${imgBase}price-nav_01.jpg`} alt='価格で選ぶ' />
+            <span class='p-price-nav__link-text'>～2,000円</span>
+          </a>
+        </li>
+        <li class='p-price-nav__item'>
+          <a href='#' class='p-price-nav__link'>
+            <img src={`${imgBase}price-nav_02.jpg`} alt='価格で選ぶ' />
+            <span class='p-price-nav__link-text'>2,000円～5,000円</span>
+          </a>
+        </li>
+        <li class='p-price-nav__item'>
+          <a href='#' class='p-price-nav__link'>
+            <img src={`${imgBase}price-nav_03.jpg`} alt='価格で選ぶ' />
+            <span class='p-price-nav__link-text'>5,000円～10,000円</span>
+          </a>
+        </li>
+        <li class='p-price-nav__item'>
+          <a href='#' class='p-price-nav__link'>
+            <img src={`${imgBase}price-nav_04.jpg`} alt='価格で選ぶ' />
+            <span class='p-price-nav__link-text'>10,000円～20,000円</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <ul class='p-price__blocks'>
+      {
+        priceBlockData.map((item) => (
+          <PriceBlock title={item.title} imgBase={imgBase} />
+        ))
+      }
+    </ul>
+  </div>
+</section>

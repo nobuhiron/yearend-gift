@@ -1,0 +1,18 @@
+@import '../global/variables.css';
+
+.p-faq{
+background:url('/public/images/faq-bg.jpg') no-repeat center center / cover;
+}
+.p-faq__items {
+  display: grid;
+  grid-template-rows: 1fr;
+  row-gap: 20px;
+}
+.p-faq__heading-title {
+  font-family: var(--font-jp--serif);
+  font-weight: var(--fw-semibold);
+  font-size: fz(24, 36);
+  text-align: center;
+  letter-spacing: 0.27em;
+}
+

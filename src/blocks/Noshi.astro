@@ -1,0 +1,63 @@
+---
+const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
+---
+
+<div class='p-tips__noshi p-noshi'>
+  <header class='p-noshi__header p-noshi-header'>
+    <div class='p-noshi-header__title-wrapper'>
+      <div class='p-noshi__title-img'>
+        <img src={`${imgBase}/svg/tips-noshi.svg`} alt='お歳暮の豆知識' />
+      </div>
+      <h3 class='p-noshi-header__title'>のし紙の種類と書き方</h3>
+    </div>
+    <p class='p-noshi-header__description'>
+      お歳暮の贈り物に掛ける「のし紙」は、紅白の５本蝶結びの一般お祝い用のし紙である<span>「紅白無地蝶結び」</span>を使用します。<br>
+      表書きは水引の上に「御歳暮」と書き、名入れは水引の下に贈り主の名前を書き入れます。
+    </p>
+    <div class='p-noshi-header__img'>
+      <img src={`${imgBase}noshi-image_main.png`} alt='お歳暮の豆知識' />
+    </div>
+  </header>
+  <div class='p-noshi__cases'>
+    <div class='p-noshi__case p-noshi-case'>
+      <div class='p-noshi-case__heading'>
+        <h4 class='p-noshi-case__title'>個人名のみの場合</h4>
+        <p class='p-noshi-case__description'>
+          フルネームが一般的ですが、目下の人へ贈る場合は姓だけでもかまいません。
+        </p>
+      </div>
+      <div class='p-noshi-case__img'>
+        <img src={`${imgBase}noshi-image_personal.png`} alt='お歳暮の豆知識' />
+      </div>
+    </div>
+    <div class='p-noshi__case p-noshi-case'>
+      <div class='p-noshi-case__heading'>
+        <h4 class='p-noshi-case__title'>連名で贈る場合</h4>
+        <p class='p-noshi-case__description'>
+          右側から左側へ、目上の方から順に書きます。
+        </p>
+      </div>
+      <div class='p-noshi-case__img'>
+        <img src={`${imgBase}noshi-image_joint.png`} alt='お歳暮の豆知識' />
+      </div>
+    </div>
+
+    <div class='p-noshi__case p-noshi-case'>
+      <div class='p-noshi-case__heading'>
+        <h4 class='p-noshi-case__title'>会社名を入れる場合</h4>
+        <p class='p-noshi-case__description'>
+          名前の右側に小さく書き添えます。
+        </p>
+      </div>
+      <div class='p-noshi-case__img'>
+        <img src={`${imgBase}noshi-image_company.png`} alt='お歳暮の豆知識' />
+      </div>
+    </div>
+  </div>
+  <div class='p-noshi__close'>
+    <button class='p-noshi__close-button'>
+        <span >閉じる</span>
+      <img src={`${imgBase}/svg/shevron-up.svg`} alt='お歳暮の豆知識' />
+    </button>
+  </div>
+</div>

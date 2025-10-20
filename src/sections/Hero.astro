@@ -1,0 +1,12 @@
+---
+const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
+---
+<section class="p-hero">
+    <h1 class="c-site-title visually-hidden">
+            森半のお歳暮
+    </h1>
+    <picture class="p-hero__img">
+        <source srcset={`${imgBase}FV_pc.jpg`} media="(min-width: 751px)">
+        <img src={`${imgBase}FV_sp.jpg`} alt="森半のお歳暮">
+    </picture>
+</section>

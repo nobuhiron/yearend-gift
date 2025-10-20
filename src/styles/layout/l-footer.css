@@ -1,0 +1,24 @@
+@import '../global/variables.css';
+
+.l-footer {
+  background-color: #590b0d;
+  padding-block: 80px 133px;
+}
+
+.l-footer__nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-block-start: 80px;
+}
+.l-footer__nav-link {
+  color: var(--color-white);
+  font-size: 14px;
+  font-family: var(--font-jp--serif);
+}
+
+.l-footer__logo {
+  max-width: 160px;
+  margin-inline: auto;
+}

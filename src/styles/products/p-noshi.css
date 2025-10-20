@@ -24,19 +24,30 @@
   display: grid;
   grid-template-rows: 1fr;
   row-gap: 10px;
+  max-width: 836px;
+  margin-inline: auto;
 }
 .p-noshi-case {
   background-color: #f6f5f2;
   padding: 16px 19px;
-  display: flex;
-  flex-direction: column;
+  display: grid;
   row-gap: 14px;
   border-radius: 12px;
+  @media (--md) {
+    grid-template-columns: 316fr 204fr;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 86px;
+  }
 }
 .p-noshi-case__heading {
   display: grid;
-  grid-template-rows: 1fr;
+  grid-template-rows: repeat(2, auto);
   row-gap: 10px;
+  max-width: 316px;
+  @media (--md) {
+    row-gap: 15px;
+  }
 }
 .p-noshi-case__title {
   background-color: var(--color-sub3);

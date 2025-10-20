@@ -14,9 +14,12 @@
   width: 100%;
   max-width: 820px;
   margin-inline: auto;
+  @container (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
   @container (min-width: 1080px) {
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
   }
 }
 
@@ -37,7 +40,7 @@
 }
 
 .p-nav-link__image {
-  @container (min-width: 1080px) {
+  @container (min-width: 768px) {
     aspect-ratio: 80/87;
   }
   img {

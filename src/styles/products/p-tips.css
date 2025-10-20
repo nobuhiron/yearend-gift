@@ -4,8 +4,15 @@
   background-color: var(--color-white);
   padding-block: 40px;
   padding-inline: 20px;
+  @media (--md) {
+    padding-block: 55px;
+    padding-inline: 70px;
+  }
 }
-
+.p-tips__heading {
+  max-width: 412px;
+  margin-inline: auto;
+}
 .p-tips__title {
   font-family: var(--font-jp--serif);
   font-weight: var(--fw-semibold);
@@ -24,7 +31,7 @@
   gap: 20px;
   @media (--md) {
     grid-template-columns: repeat(2, 1fr);
-    columns-gap: 40px;
+    column-gap: 40px;
     row-gap: 24px;
   }
 }

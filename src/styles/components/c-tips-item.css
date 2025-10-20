@@ -1,3 +1,5 @@
+@import '../global/variables.css';
+
 .c-tips-item {
   color: #1a1a1a;
   border-radius: 12px;
@@ -17,10 +19,13 @@
   font-size: fz(20, 22);
   text-align: center;
   letter-spacing: 0.04em;
+  @media (--md) {
+    display: none;
+  }
 }
 
 .c-tips-item__description {
-    font-family: var(--font-jp--sanserif);
+  font-family: var(--font-jp--sanserif);
   font-weight: var(--fw-semibold);
   font-size: fz(14, 15);
   line-height: 1.62;

@@ -1,5 +1,9 @@
 @import '../global/variables.css';
-.p-reviews {
+.p-reviews__inner {
+  container-type: inline-size;
+  max-width: 980px;
+  width: 100%;
+  margin-inline: auto;
 }
 .p-reviews__title {
   font-family: var(--font-jp--serif);
@@ -8,12 +12,17 @@
   text-align: center;
   color: var(--color-white);
   background-color: var(--color-sub3);
-  boder-radius: 8px;
+  border-radius: 8px;
 }
 .p-reviews__list {
   display: grid;
   grid-template-columns: 1fr;
   gap: 10px;
+  margin-block-start: 20px;
+  @container (min-width:768px) {
+    grid-template-columns: repeat(3, 1fr);
+    margin-block-start: 40px;
+  }
 }
 
 .p-reviews__item {

@@ -1,5 +1,12 @@
+.p-cards{
+  container-type: inline-size;
+}
+
 .p-cards__list {
   display: grid;
   grid-template-columns: 1fr;
   gap: 40px;
+  @container (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

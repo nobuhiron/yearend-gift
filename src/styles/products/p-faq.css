@@ -1,12 +1,19 @@
 @import '../global/variables.css';
 
-.p-faq{
-background:url('/public/images/faq-bg.jpg') no-repeat center center / cover;
+.p-faq {
+  background: url('/public/images/faq-bg.jpg') no-repeat center center / cover;
+  container-type: inline-size;
 }
 .p-faq__items {
   display: grid;
   grid-template-rows: 1fr;
   row-gap: 20px;
+  max-width: 893px;
+  margin-inline: auto;
+  width: 100%;
+  @container (min-width: 893px) {
+    width: 63.78%;
+  }
 }
 .p-faq__heading-title {
   font-family: var(--font-jp--serif);
@@ -15,4 +22,3 @@ background:url('/public/images/faq-bg.jpg') no-repeat center center / cover;
   text-align: center;
   letter-spacing: 0.27em;
 }
-

@@ -6,7 +6,7 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 40px;
-  @container (min-width: 768px) {
+  @container (min-width: 580px) {
     grid-template-columns: repeat(3, 1fr);
   }
 }

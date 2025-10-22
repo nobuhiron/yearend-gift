@@ -1,18 +1,32 @@
 ---
-const { index, title, description } = Astro.props;
+const { index, title, description, colorClass } = Astro.props;
 const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
 ---
 
 <li class='p-tips__item c-tips-item'>
-  <header class='c-tips-item__heading'>
-    <div class='c-tips-item__heading-img'>
+  <header class={`c-tips-item__heading ${colorClass}`}>
+    <header class='c-tips-item__heading-img--pc'>
       <img
         src={`${imgBase}/svg/tips-image_${index}.svg`}
         alt='お歳暮の豆知識'
       />
-    </div>
-    <h3 class='c-tips-item__title'><span>{title}</span></h3>
+    </header>
+    <h3 class='c-tips-item__title'>
+      <span
+        >{title}
+        <div class='c-tips-item__heading-img'>
+          <img
+            src={`${imgBase}/svg/tips-image_${index}.svg`}
+            alt='お歳暮の豆知識'
+          />
+        </div>
+      </span>
+    </h3>
   </header>
-  <h3 class='c-tips-item__title'>{title}</h3>
-  <p class='c-tips-item__description'>{description}</p>
+  <div class='c-tips-item__content'>
+    <h3 class='c-tips-item__title--pc'>{title}</h3>
+    <p class='c-tips-item__description'>
+      {description}
+    </p>
+  </div>
 </li>

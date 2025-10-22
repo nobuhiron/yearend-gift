@@ -1,8 +1,16 @@
 @import '../global/variables.css';
 
 .p-noshi {
+  padding-block-start: 40px;
+  @media (--md) {
+    padding-block-start: 57px;
+  }
 }
-
+.p-noshi__title-img {
+  width: 43.46vw;
+  margin-inline: auto;
+  max-width: 210px;
+}
 .p-noshi-header__title {
   font-family: var(--font-jp--serif);
   font-weight: var(--fw-semibold);
@@ -33,6 +41,7 @@
   display: grid;
   row-gap: 14px;
   border-radius: 12px;
+  justify-items: center;
   @media (--md) {
     grid-template-columns: 316fr 204fr;
     align-items: center;
@@ -57,16 +66,43 @@
   letter-spacing: 0.04em;
 }
 
+.p-noshi-case__img {
+  width: calc(180 / 375 * 100vw);
+  max-width: 205px;
+}
 .p-noshi__close {
   background-color: var(--color-sub);
+  margin-inline: auto;
+  max-width: 233px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-block-start: 20px;
+  @media (--md) {
+    margin-block-start: 30px;
+  }
+}
+.p-noshi__close-text {
+  color: var(--color-white);
+  font-weight: var(--fw-semibold);
+  font-family: var(--font-jp--sanserif);
+  letter-spacing: 0.04em;
+  line-height: 36px;
 }
 .p-noshi__close-button {
-  background-color: var(--color-sub);
+  position: absolute;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 18px;
+  aspect-ratio: 1/1;
   display: flex;
   align-items: center;
   justify-content: center;
   border: none;
+  right: 13px;
+  background-color: var(--color-white);
+  img {
+    height: 100%;
+    object-fit: cover;
+  }
 }

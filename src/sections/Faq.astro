@@ -13,7 +13,7 @@ const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
     <div class='p-faq__items'>
       {
         faqItemData.map((item) => (
-          <FaqItem title={item.title} description={item.description} />
+          <FaqItem title={item.title} description={item.description} index={item.index} />
         ))
       }
     </div>

@@ -15,8 +15,9 @@
   gap: 20px;
   padding-block-start: 80px;
   @container (min-width: 856px) {
-flex-direction: row;
-gap: 0;
+    justify-self: center;
+    flex-direction: row;
+    gap: 0;
   }
 }
 

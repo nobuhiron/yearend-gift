@@ -3,6 +3,10 @@
 .p-faq {
   background: url('/public/images/faq-bg.jpg') no-repeat center center / cover;
   container-type: inline-size;
+  padding-block: 60px;
+  @media (--md) {
+    padding-block: 120px 70px;
+  }
 }
 .p-faq__items {
   display: grid;

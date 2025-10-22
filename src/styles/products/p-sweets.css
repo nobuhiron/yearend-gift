@@ -1,0 +1,10 @@
+.p-sweets__assortments {
+  padding-inline: 30px;
+  padding-block: 60px;
+}
+
+.p-sweets__other {
+  background-color: var(--color-white);
+  padding-inline: 30px;
+  padding-block: 60px;
+}

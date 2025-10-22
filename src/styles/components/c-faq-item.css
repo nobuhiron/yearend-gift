@@ -1,4 +1,5 @@
 .c-faq-item {
+  transition: all 0.3s ease-in-out;
 }
 
 .c-faq-item__heading {
@@ -23,10 +24,19 @@
   color: var(--color-main);
   flex: 1;
 }
+
 .c-faq-item__button {
   flex: 0 0 12px;
   margin-inline-start: 9px;
   aspect-ratio: 2/1;
+}
+.c-faq-item[open] .c-faq-item__button img {
+  transform: rotate(0deg);
+}
+
+.c-faq-item__button img {
+  transition: transform 0.3s ease-in-out;
+  transform: rotate(180deg);
 }
 .c-faq-item__content {
   background-color: var(--color-white);
@@ -35,6 +45,9 @@
   padding: 20px;
   font-size: fz(14, 15);
   line-height: 1.42;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  overflow: clip;
   @media (--md) {
     padding-inline-start: 40px;
     display: flex;

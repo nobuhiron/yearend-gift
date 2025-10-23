@@ -72,4 +72,8 @@
   letter-spacing: 0.04em;
   margin-block-start: 20px;
   max-width: 300px;
+  margin-inline: auto;
+  @media (--md) {
+    margin-inline: unset;
+  }
 }

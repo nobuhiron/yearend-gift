@@ -1,5 +1,10 @@
 @import '../global/index.css';
-
+.p-tips {
+  padding-block-start: 60px;
+  @media (--md) {
+    padding-block-start: 100px;
+  }
+}
 .p-tips__inner {
   background-color: var(--color-white);
   padding-block: 40px;

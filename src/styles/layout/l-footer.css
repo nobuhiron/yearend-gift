@@ -18,6 +18,8 @@
   align-items: center;
   justify-items: center;
   gap: 20px;
+  width: 100%;
+  max-width: 856px;
   padding-block-start: 80px;
   @container (min-width: 960px) {
     justify-self: center;
@@ -30,6 +32,16 @@
 .l-footer__nav-item {
   @container (min-width: 960px) {
     position: relative;
+    padding-inline: 2.33%;
+
+    &:first-child {
+      padding-inline-start: 0;
+    }
+
+    &:last-child {
+      padding-inline-end: 0;
+    }
+
     &:not(:last-child) {
       &::after {
         content: '';
@@ -52,9 +64,6 @@
   font-weight: var(--fw-bold);
   display: block;
   text-align: center;
-  @container (min-width: 960px) {
-    padding-inline: 20px;
-  }
 }
 .l-footer__nav-link-br {
   display: none;

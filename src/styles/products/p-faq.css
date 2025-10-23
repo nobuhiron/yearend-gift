@@ -1,7 +1,7 @@
 @import '../global/variables.css';
 
 .p-faq {
-  background: url('/public/images/faq-bg.jpg') no-repeat center center / cover;
+  background: url('/public/images/wave-bg.jpg') no-repeat center center / cover;
   container-type: inline-size;
   padding-block: 60px;
   @media (--md) {

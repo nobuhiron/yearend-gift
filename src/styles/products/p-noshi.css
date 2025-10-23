@@ -10,43 +10,62 @@
   width: 43.46vw;
   margin-inline: auto;
   max-width: 210px;
+
 }
 .p-noshi-header__title {
   font-family: var(--font-jp--serif);
   font-weight: var(--fw-semibold);
   font-size: fz(24, 36);
   text-align: center;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.1em;
+  margin-block-start: 18px;
 }
 .p-noshi-header__description {
   font-weight: var(--fw-semibold);
+  font-family: var(--font-jp--sanserif);
   font-size: fz(14, 16);
   text-align: center;
+  margin-block-start: 18px;
+  @media (--md) {
+    margin-block-start: 29px;
+  }
   span {
     color: red;
     text-decoration: underline;
   }
 }
-
+.p-noshi-header__img {
+  margin-block-start: 28px;
+  max-width: 380px;
+  margin-inline: auto;
+  @media (--md) {
+    margin-block-start: 25px;
+  }
+}
 .p-noshi__cases {
   display: grid;
   grid-template-rows: 1fr;
   row-gap: 10px;
   max-width: 836px;
   margin-inline: auto;
+  margin-block-start: 40px;
+  @media (--md) {
+    margin-block-start: 30px;
+    row-gap: 16px;
+  }
 }
 .p-noshi-case {
   background-color: #f6f5f2;
   padding: 16px 19px;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   row-gap: 14px;
   border-radius: 12px;
-  justify-items: center;
+  align-items: center;
   @media (--md) {
-    grid-template-columns: 316fr 204fr;
-    align-items: center;
-    justify-content: space-between;
-    padding-inline: 86px;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: min(130px, calc(130 / 836 * 100%));
   }
 }
 .p-noshi-case__heading {
@@ -55,19 +74,27 @@
   row-gap: 10px;
   max-width: 316px;
   @media (--md) {
-    row-gap: 15px;
+    flex: 1;
   }
 }
 .p-noshi-case__title {
+  font-family: var(--font-jp--sanserif);
+  font-weight: var(--fw-semibold);
   background-color: var(--color-sub3);
+  line-height: 1.92;
+  font-size: fz(14, 16);
   border-radius: 100px;
   color: var(--color-white);
   text-align: center;
   letter-spacing: 0.04em;
 }
+.p-noshi-case__description {
+  font-family: var(--font-jp--sanserif);
+  font-weight: var(--fw-medium);
+  font-size: fz(14, 16);
+}
 
 .p-noshi-case__img {
-  width: calc(180 / 375 * 100vw);
   max-width: 205px;
 }
 .p-noshi__close {

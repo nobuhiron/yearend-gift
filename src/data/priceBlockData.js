@@ -1,14 +1,17 @@
 export const priceBlockData = [
   {
-    title: '～2,000円',
+    bottomPrice: '',
+    upperPrice: '2,000',
     imgBase: 'https://placehold.co/600x400',
   },
   {
-    title: '2,000円～5,000円',
+    bottomPrice: '2,000',
+    upperPrice: '5,000',
     imgBase: 'https://placehold.co/600x400',
   },
   {
-    title: '5,000円～10,000円',
+    bottomPrice: '5,000',
+    upperPrice: '10,000',
     imgBase: 'https://placehold.co/600x400',
   },
 ];

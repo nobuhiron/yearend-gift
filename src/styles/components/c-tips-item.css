@@ -2,6 +2,10 @@
 
 .c-tips-item {
   color: #1a1a1a;
+  display: grid;
+  @media (--md) {
+    grid-template-rows: auto 1fr;
+  }
 }
 .c-tips-item__heading {
   background-color: var(--color-sub3);
@@ -40,6 +44,7 @@
   font-size: fz(20, 22);
   text-align: center;
   letter-spacing: 0.04em;
+  padding-block: 9px;
   span {
     position: relative;
   }
@@ -71,6 +76,9 @@
   @media (--md) {
     display: none;
   }
+  img {
+    height: 100%;
+  }
 }
 
 .c-tips-item__content {
@@ -81,7 +89,7 @@
   border-bottom-right-radius: 12px;
   @media (--md) {
     padding-inline: 30px;
-    padding-block-start: 20px;
+    padding-block: 20px 40px;
   }
 }
 .c-tips-item__description {
@@ -89,5 +97,7 @@
   font-weight: var(--fw-medium);
   font-size: fz(14, 15);
   line-height: 1.8;
-  margin-block-start: 13px;
+  @media (--md) {
+    margin-block-start: 13px;
+  }
 }

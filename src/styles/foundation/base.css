@@ -59,3 +59,9 @@ img {
   overflow: hidden;
   white-space: nowrap;
 }
+.is_sm {
+  display: block;
+  @media (--md) {
+    display: none;
+  }
+}

@@ -1,6 +1,8 @@
 @import '../global/variables.css';
 
 .p-reasons {
+  background: url('/public/images/wave-bg.jpg') no-repeat center center / cover;
+  padding-block: 60px 93px;
 }
 
 .p-reasons__heading {

@@ -1,0 +1,20 @@
+.c-ranking-card__frame {
+  background: url(/public/images/svg/ranking_bg--sp.svg) no-repeat center center /
+    contain;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  aspect-ratio: 335 / 384;
+  padding-block: 42px 32px;
+  padding-inline: 32px;
+  margin-block-start: 45px;
+}
+.c-ranking-card__tag {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  aspect-ratio: 130/73;
+  max-width: 130px;
+}

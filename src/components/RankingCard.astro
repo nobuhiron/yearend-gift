@@ -1,0 +1,23 @@
+---
+const { index, title, price } = Astro.props;
+const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
+---
+
+<li class='c-ranking-card splide__slide'>
+  <div class='c-ranking-card__frame'>
+  <div class='c-ranking-card__tag'>
+    <img src={`${imgBase}/svg/no${index}_title.svg`} alt='ranking_tag' />
+  </div>
+  <div class='c-ranking-card__image'>
+    <img src={`${imgBase}/ranking_${index}.png`} alt='ranking_image' />
+  </div>
+  <h4 class='c-ranking-card__title'>{title}</h4>
+  <div class='c-ranking-card__line'>
+      <img src={`${imgBase}/svg/line.svg`} alt='line' />
+    </div>
+
+  <div class='c-ranking-card__price'>
+    {price}<span class='c-ranking-card__price-amount'>(税込)</span>
+  </div>
+  </div>
+</li>

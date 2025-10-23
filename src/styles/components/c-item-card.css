@@ -6,13 +6,7 @@
 }
 .c-item-card__content {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr auto auto auto;
-}
-.p-content__inner {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr auto;
+  grid-template-rows: 1fr 1fr auto auto;
 }
 .c-item-card__title {
   font-family: var(--font-jp--serif);

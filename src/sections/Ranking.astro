@@ -1,0 +1,65 @@
+---
+import RankingCard from '../components/RankingCard.astro';
+import { rankingItemData } from '../data/rankingItemData';
+const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
+---
+
+<!-- Splide.js CDN -->
+<link
+  rel='stylesheet'
+  href='https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css'
+/>
+<script
+  src='https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js'
+></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const splide = new Splide('.splide', {
+      type: 'slide',
+      perPage: 4,
+      perMove: 1,
+      gap: '40px',
+      padding: { left: 170, right: 60},
+      breakpoints: {
+        768: {
+          perPage: 1,
+          gap: '1rem',
+          padding: '20px',
+        },
+        980: {
+          perPage: 3,
+          gap: '1rem',
+          padding: '20px',
+        },
+      },
+
+      arrows: true,
+      pagination: true,
+    });
+
+    splide.mount();
+  });
+</script>
+
+<section class='p-ranking'>
+  <h2 class='p-ranking__heading'>
+    <span class='visually-hidden'>お歳暮・冬ギフトランキング</span>
+    <img src={`${imgBase}/svg/ranking_title.svg`} alt='お歳暮・冬ギフトランキング' />
+  </h2>
+  <div class='splide' role='group' aria-label='お歳暮・冬ギフトランキング'>
+    <div class='splide__track'>
+      <ul class='splide__list p-ranking__items'>
+        {
+          rankingItemData.map((item) => (
+            <RankingCard
+              index={item.index}
+              title={item.title}
+              price={item.price}
+            />
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+</section>

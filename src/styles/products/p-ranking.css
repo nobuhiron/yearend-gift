@@ -2,3 +2,80 @@
   background: url('/public/images/wave-bg.jpg') no-repeat center center / cover;
   padding-block: 60px 93px;
 }
+.p-ranking__deco-wrapper {
+  position: relative;
+  height: 66px;
+  width: 100%;
+  margin-inline: auto;
+  @media (--md) {
+    height: 70px;
+  }
+  .p-raking__deco-1 {
+    position: absolute;
+    max-width: 56px;
+    @media (--md) {
+      top: 0;
+      left: 34%;
+      max-width: revert;
+    }
+  }
+  .p-raking__deco-2 {
+    position: absolute;
+    top: 0;
+    right: 22%;
+  }
+  .p-raking__deco-3 {
+    position: absolute;
+    bottom: -5%;
+    left: -26%;
+    max-width: 61px;
+    @media (--md) {
+      bottom: 4%;
+      left: 19%;
+      max-width: revert;
+    }
+  }
+  .p-raking__deco-4 {
+    position: absolute;
+    bottom: -4%;
+    right: -33%;
+    @media (--md) {
+      bottom: -5%;
+      right: 14%;
+    }
+  }
+  .p-raking__deco-5 {
+    position: absolute;
+    bottom: 13%;
+    left: 50%;
+    transform: translateX(-50%);
+    @media (--md) {
+      bottom: 0;
+    }
+  }
+}
+.p-ranking__heading {
+  width: calc(220 / 375 * 100vw);
+  margin-inline: auto;
+  @media (--md) {
+    width: calc(686 / 1440 * 100vw);
+    max-width: 686px;
+  }
+}
+
+.p-ranking__title-wrapper {
+  display: flex;
+  flex-direction: column;
+  img:nth-child(3) {
+    width: 82%;
+    margin-inline: auto;
+    @media (--md) {
+      width: 100%;
+    }
+  }
+  @media (--md) {
+    flex-direction: row;
+    justify-content: center;
+
+  }
+}

@@ -4,8 +4,9 @@
   position: relative;
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto auto;
   aspect-ratio: 335 / 384;
-  padding-block: 42px 32px;
+  padding-block-start: 42px;
   padding-inline: 32px;
   margin-block-start: 45px;
 }
@@ -17,4 +18,21 @@
   z-index: 1;
   aspect-ratio: 130/73;
   max-width: 130px;
+  &._side {
+    left: 50px;
+    top: -10px;
+
+    transform: unset;
+    aspect-ratio: 1/1;
+    max-width: 95px;
+  }
+}
+.c-ranking-card__image {
+  img {
+    height: 100%;
+    width: auto;
+  }
+}
+.c-ranking-card__price {
+  padding-block-end: 32px;
 }

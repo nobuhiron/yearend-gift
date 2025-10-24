@@ -1,0 +1,14 @@
+---
+const { index, titleJa, titleEn } = Astro.props;
+const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
+---
+
+<header class='c-feature-item-header'>
+  <div class='c-feature-item-header__image'>
+    <img src={`${imgBase}feature_item-title${index}.png`} alt='森半のお歳暮' />
+  </div>
+  <h3 class='c-feature-item-header__title'>
+    <span class='c-feature-item-header__title--ja'>{titleJa}</span>
+    <span class='c-feature-item-header__title--en'>{titleEn}</span>
+  </h3>
+</header>

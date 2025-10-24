@@ -5,7 +5,7 @@ export const rankingItemData = [
     price: '5,400',
   },
   {
-    index: 1,
+    index: 2,
     title: 'お茶屋のスイーツ満足セット',
     price: '5,100',
   },

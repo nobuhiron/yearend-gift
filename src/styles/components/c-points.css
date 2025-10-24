@@ -1,0 +1,33 @@
+.c-points__item {
+  display: grid;
+  grid-template-columns: 100fr 226fr;
+  align-items: center;
+  gap: 14px;
+}
+.c-points__image {
+  padding: 7px;
+  border: 1px dotted var(--color-sub3);
+  border-radius: 100%;
+}
+.c-points__text {
+  display: grid;
+  row-gap: 20px;
+}
+
+.c-points__text-title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.c-points__title-num {
+  font-family: var(--font-jp--sanserif);
+  font-weight: var(--fw-semibold);
+  font-size: fz(16, 18);
+  line-height: 1;
+  color: var(--color-sub3);
+  display: grid;
+  justify-content: center;
+}
+.c-points__title-num--ja {
+  font-size: fz(12, 14);
+}

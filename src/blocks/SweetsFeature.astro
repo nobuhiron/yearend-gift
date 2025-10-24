@@ -1,5 +1,8 @@
 ---
 import FeatureItemHeader from '../components/FeatureItemHeader.astro';
+import PointsItem from '../components/PointsItem.astro';
+import { featureItemPointsDataWaffle } from '../data/featureItemPointsData';
+import { featureItemPointsDataFinancier } from '../data/featureItemPointsData';
 const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
 ---
 
@@ -14,14 +17,41 @@ const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
       <div class='p-sweets__feature__img'>
         <img src={`${imgBase}feature_item-waffle.png`} alt='抹茶ヴァッフェル' />
       </div>
-  
-    </li>
-    <li class='p-sweets__feature-item'>
-      <FeatureItemHeader
-        index={2}
-        titleJa='抹茶フィナンシェ'
-        titleEn='matcha financier'
-      />
+      <div class='p-sweets__feature__points-list'>
+        {
+          featureItemPointsDataWaffle.map((item) => (
+            <PointsItem
+              index={item.index}
+              title={item.title}
+              description={item.description}
+            />
+          ))
+        }
+      </div>
     </li>
   </ul>
+  <li class='p-sweets__feature-item'>
+    <FeatureItemHeader
+      index={2}
+      titleJa='抹茶フィナンシェ'
+      titleEn='matcha financier'
+    />
+    <div class='p-sweets__feature__img'>
+      <img
+        src={`${imgBase}feature_item-financier.png`}
+        alt='抹茶フィナンシェ'
+      />
+    </div>
+    <div class='p-sweets__feature__points-list'>
+      {
+        featureItemPointsDataFinancier.map((item) => (
+          <PointsItem
+            index={item.index}
+            title={item.title}
+            description={item.description}
+          />
+        ))
+      }
+    </div>
+  </li>
 </div>

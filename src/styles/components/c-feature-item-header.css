@@ -1,0 +1,25 @@
+.c-feature-item-header {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, auto);
+  gap: 7px;
+}
+
+.c-feature-item-header__image {
+  max-width: 65px;
+  margin-inline: auto;
+}
+.c-feature-item-header__title-wrapper {
+  position: relative;
+  text-align: center;
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  font-size: fz(60, 100);
+  color: #76951929;
+}
+.c-feature-item-header__title {
+  position: absolute;
+  color: #4e530f;
+  font-size: fz(26, 36);
+}

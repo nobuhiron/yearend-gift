@@ -32,7 +32,7 @@
 }
 .p-reviews__heading-ahirai {
   position: absolute;
-  top: -30px;
+  top: -28px;
   left: 50%;
   transform: translateX(-50%);
   width: 35px;
@@ -66,6 +66,8 @@
 .p-reviews__item-text {
   padding-block-start: 20px;
   padding-inline: 16px;
+  font-size: 14px;
+  letter-spacing: 0.04em;
 }
 .p-reviews__user {
   display: flex;

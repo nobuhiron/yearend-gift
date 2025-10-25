@@ -16,16 +16,16 @@
     height: 46px;
   }
   &._pink {
-    background-color: var(--color-sub3);
+    background-color: #f2b9bb;
   }
   &._orange {
-    background-color: var(--color-sub2);
+    background-color: #f2c5b5;
   }
   &._yellow {
-    background-color: var(--color-sub3);
+    background-color: #f7e19f;
   }
   &._green {
-    background-color: var(--color-sub4);
+    background-color: #c7e6b3;
   }
 }
 .c-tips-item__title--pc {

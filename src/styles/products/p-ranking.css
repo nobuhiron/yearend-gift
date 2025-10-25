@@ -1,6 +1,9 @@
 .p-ranking {
   background: url('/public/images/wave-bg.jpg') no-repeat center center / cover;
-  padding-block: 60px 93px;
+  padding-block: 40px 60px;
+  @media (--md) {
+    padding-block: 80px 122px;
+  }
 }
 .p-ranking__deco-wrapper {
   position: relative;
@@ -13,6 +16,8 @@
   .p-raking__deco-1 {
     position: absolute;
     max-width: 56px;
+    left: 13%;
+    top: 22%;
     @media (--md) {
       top: 0;
       left: 34%;
@@ -22,12 +27,13 @@
   .p-raking__deco-2 {
     position: absolute;
     top: 0;
-    right: 22%;
+    right: 12%;
+    max-width: 61px;
   }
   .p-raking__deco-3 {
     position: absolute;
     bottom: -5%;
-    left: -26%;
+    left: -21%;
     max-width: 61px;
     @media (--md) {
       bottom: 4%;
@@ -48,6 +54,8 @@
     position: absolute;
     bottom: 13%;
     left: 50%;
+    width: 100%;
+    max-width: 156px;
     transform: translateX(-50%);
     @media (--md) {
       bottom: 0;
@@ -76,6 +84,9 @@
   @media (--md) {
     flex-direction: row;
     justify-content: center;
-
   }
+}
+
+.p-ranking__carousel {
+  margin-block-start: 30px;
 }

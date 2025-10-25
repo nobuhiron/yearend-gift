@@ -1,3 +1,9 @@
+.p-sweets {
+  background: url('/public/images/sweets-bg.jpg') no-repeat center center /
+    cover;
+  padding-block: 60px;
+}
+
 .p-sweets__assortments {
   padding-inline: 30px;
   padding-block: 60px;
@@ -7,4 +13,34 @@
   background-color: var(--color-white);
   padding-inline: 30px;
   padding-block: 60px;
+}
+
+.p-sweets__feature {
+  padding-block: 35px 80px;
+}
+
+.p-sweets__feature-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 62px;
+}
+
+.p-sweets__feature__img-wrapper {
+
+  @media (--lg) {
+    position: relative;
+  }
+}
+
+.p-sweets__feature__img {
+max-width: 835px;
+margin-inline: auto;
+}
+.p-sweets__feature__points-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  @media (--lg) {
+    display: contents;
+  }
 }

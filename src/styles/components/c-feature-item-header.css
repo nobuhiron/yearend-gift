@@ -12,14 +12,24 @@
 .c-feature-item-header__title-wrapper {
   position: relative;
   text-align: center;
-  margin-inline: auto;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
   display: flex;
   justify-content: center;
   font-size: fz(60, 100);
   color: #76951929;
+  font-family: var(--font-en--decor);
+  font-weight: var(--fw-regular);
+  letter-spacing: -0.01em;
+  line-height: 1;
 }
 .c-feature-item-header__title {
   position: absolute;
   color: #4e530f;
   font-size: fz(26, 36);
+  font-family: var(--font-jp--serif);
+  font-weight: var(--fw-semibold);
+  letter-spacing: 0.1em;
+  top: -2px;
 }

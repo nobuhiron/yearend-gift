@@ -24,6 +24,7 @@
   font-size: fz(24, 36);
   text-align: center;
   letter-spacing: 0.27em;
+  line-height: 1;
 }
 
 .p-tips__heading-img--lower {

@@ -30,7 +30,9 @@
   font-weight: var(--fw-semibold);
   font-size: fz(24, 32);
   text-align: center;
-  color: var(--color-sub);
+  color: var(--color-main);
+  line-height: 1.3333;
+  letter-spacing: 0.08em;
 }
 .p-wrapping-header__image-lower {
   padding-block-start: 18px;
@@ -134,8 +136,9 @@
     top: 50%;
     transform: translateY(-50%);
     right: 12px;
+    aspect-ratio: 1/1;
+    display: inline-block;
     width: 18px;
-    height: 18px;
-    border-radius: 50%;
+    overflow: hidden;
   }
 }

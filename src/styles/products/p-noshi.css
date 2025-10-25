@@ -10,7 +10,6 @@
   width: 43.46vw;
   margin-inline: auto;
   max-width: 210px;
-
 }
 .p-noshi-header__title {
   font-family: var(--font-jp--serif);
@@ -19,6 +18,7 @@
   text-align: center;
   letter-spacing: 0.1em;
   margin-block-start: 18px;
+  line-height: 1;
 }
 .p-noshi-header__description {
   font-weight: var(--fw-semibold);
@@ -26,11 +26,12 @@
   font-size: fz(14, 16);
   text-align: center;
   margin-block-start: 18px;
+  letter-spacing: 0.04em;
   @media (--md) {
     margin-block-start: 29px;
   }
   span {
-    color: red;
+    color: var(--color-red);
     text-decoration: underline;
   }
 }
@@ -80,7 +81,7 @@
 .p-noshi-case__title {
   font-family: var(--font-jp--sanserif);
   font-weight: var(--fw-semibold);
-  background-color: var(--color-sub3);
+  background-color: #c2584a;
   line-height: 1.92;
   font-size: fz(14, 16);
   border-radius: 100px;
@@ -98,7 +99,7 @@
   max-width: 205px;
 }
 .p-noshi__close {
-  background-color: var(--color-sub);
+  background-color: var(--color-deep-beige);
   margin-inline: auto;
   max-width: 233px;
   display: flex;

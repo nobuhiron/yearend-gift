@@ -4,74 +4,81 @@ const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
 
 <section class='p-nav'>
   <div class='l-container'>
-    <h2 class='p-nav__heading visually-hidden'>コンテンツ一覧</h2>
-    <nav class='p-nav__inner'>
+    <h2 id='nav-heading' class='p-nav__heading visually-hidden'>コンテンツ一覧</h2>
+    <nav class='p-nav__inner' aria-labelledby='nav-heading'>
       <ul class='p-nav__list'>
         <li class='p-nav__item'>
           <a href='#' class='p-nav__link'>
             <div class='p-nav-link__image'>
-              <img src={`${imgBase}nav_01.jpg`} alt='森半のお歳暮' />
+              <img src={`${imgBase}nav_01.jpg`} alt='' loading='lazy'/>
             </div>
             <div class='p-nav-link__text'>
               <h3 class='p-nav-link__title'>
                 お歳暮・冬ギフト<br />ランキング
               </h3>
-              <p class='p-nav-link__arrow'>></p>
+              <span class='p-nav-link__arrow'>
+              </span>
             </div>
           </a>
         </li>
         <li class='p-nav__item'>
           <a href='#' class='p-nav__link'>
             <div class='p-nav-link__image'>
-              <img src={`${imgBase}nav_01.jpg`} alt='森半のお歳暮' />
+                <img src={`${imgBase}nav_01.jpg`} alt='' />
             </div>
             <div class='p-nav-link__text'>
               <h3 class='p-nav-link__title'>お歳暮の豆知識</h3>
-              <p class='p-nav-link__arrow'>></p>
+              <span class='p-nav-link__arrow'>
+              </span>
             </div>
           </a>
         </li>
         <li class='p-nav__item'>
           <a href='#' class='p-nav__link'>
             <div class='p-nav-link__image'>
-              <img src={`${imgBase}nav_01.jpg`} alt='森半のお歳暮' />
+              <img src={`${imgBase}nav_01.jpg`} alt='' loading='lazy'/>
             </div>
             <div class='p-nav-link__text'>
               <h3 class='p-nav-link__title'>選ばれる理由</h3>
-              <p class='p-nav-link__arrow'>></p>
+              <span class='p-nav-link__arrow'>
+              </span>
             </div>
           </a>
         </li>
         <li class='p-nav__item'>
           <a href='#' class='p-nav__link'>
             <div class='p-nav-link__image'>
-              <img src={`${imgBase}nav_01.jpg`} alt='森半のお歳暮' />
+              <img src={`${imgBase}nav_01.jpg`} alt='' loading='lazy'/>
             </div>
             <div class='p-nav-link__text'>
               <h3 class='p-nav-link__title'>人気の抹茶<br />スイーツで選ぶ</h3>
-              <p class='p-nav-link__arrow'>></p>
+              <span class='p-nav-link__arrow'>
+              </span>
             </div>
           </a>
         </li>
         <li class='p-nav__item'>
           <a href='#' class='p-nav__link'>
             <div class='p-nav-link__image'>
-              <img src={`${imgBase}nav_01.jpg`} alt='森半のお歳暮' />
+              <img src={`${imgBase}nav_01.jpg`} alt='' loading='lazy'/>
             </div>
             <div class='p-nav-link__text'>
               <h3 class='p-nav-link__title'>価格で選ぶ</h3>
-              <p class='p-nav-link__arrow'>></p>
+              
+              <span class='p-nav-link__arrow'>
+              </span>
             </div>
           </a>
         </li>
         <li class='p-nav__item'>
           <a href='#' class='p-nav__link'>
             <div class='p-nav-link__image'>
-              <img src={`${imgBase}nav_01.jpg`} alt='森半のお歳暮' />
+              <img src={`${imgBase}nav_01.jpg`} alt='' loading='lazy'/>
             </div>
             <div class='p-nav-link__text'>
               <h3 class='p-nav-link__title'>よくある質問</h3>
-              <p class='p-nav-link__arrow'>></p>
+              <span class='p-nav-link__arrow'>
+              </span>
             </div>
           </a>
         </li>

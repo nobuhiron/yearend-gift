@@ -1,15 +1,14 @@
 ---
 import FaqItem from '../components/FaqItem.astro';
 import { faqItemData } from '../data/faqItemData';
+import SectionTitle from '../components/SectionTitle.astro';
 const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
 
 ---
 
-<section class='p-faq'>
+<section id='faq-section' class='p-faq' aria-labelledby='faq-heading'>
   <div class='l-container'>
-    <div class='p-faq__heading'>
-      <h2 class='p-faq__heading-title'>よくある質問</h2>
-    </div>
+    <SectionTitle id='faq-heading' title='よくある質問' />
     <div class='p-faq__items'>
       {
         faqItemData.map((item) => (

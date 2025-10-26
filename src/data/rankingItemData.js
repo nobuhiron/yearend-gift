@@ -1,7 +1,7 @@
 export const rankingItemData = [
   {
     index: 1,
-    title: '<宇治>名品銘茶 詰め合わせ(高山寺)',
+    title: '<宇治>名品銘茶<br>詰め合わせ(高山寺)',
     price: '5,400',
   },
   {
@@ -16,12 +16,12 @@ export const rankingItemData = [
   },
   {
     index: 4,
-    title: '銘茶五香(ごこう)・<br>抹茶カステラ詰合せ<br>￥4,542（税込）',
+    title: '銘茶五香(ごこう)・<br>抹茶カステラ詰合せ',
     price: '4,542',
   },
   {
     index: 5,
-    title: 'CHASTA(チャスタ)・ISSEN[10P入り] ギフトセット',
+    title: 'CHASTA(チャスタ)・ISSEN<br>[10P入り] ギフトセット',
     price: '5,390',
   },
 ];

@@ -42,8 +42,8 @@ const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
   });
 </script>
 
-<section class='p-ranking'>
-  <h2 class='p-ranking__heading'>
+<section id='ranking-section' class='p-ranking' aria-labelledby='ranking-heading'>
+  <header id='ranking-heading' class='p-ranking__heading'>
     <div class='p-ranking__deco-wrapper'>
       <div class='p-raking__deco-1'>
         <img
@@ -77,15 +77,19 @@ const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
       </div>
     </div>
     <div class='p-ranking__title-wrapper'>
-          <span class='visually-hidden'>お歳暮・冬ギフトランキング</span>
+        <h2 id='ranking-title' class='visually-hidden'>お歳暮・冬ギフトランキング</h2>
+      <div class='p-ranking__title-img--wrapper _1'>
       <img
         src={`${imgBase}/svg/ranking_title-1.svg`}
         alt='お歳暮・冬ギフトランキング'
       />
+      </div>
+        <div class='p-ranking__title-img--wrapper _2'>
       <img src={`${imgBase}/svg/ranking_title-2.svg`} alt='お歳暮・冬ギフトランキング' />
+            </div>
     </div>
 
-  </h2>
+  </header>
   <div class='splide p-ranking__carousel'  role='group' aria-label='お歳暮・冬ギフトランキング'>
     <div class='splide__track'>
       <ul class='splide__list p-ranking__items'>
@@ -101,4 +105,7 @@ const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
       </ul>
     </div>
   </div>
+<div class='p-ranking__gold-line'>
+  <img src={`${imgBase}/svg/gold_line.svg`} alt='gold-line' />
+</div>
 </section>

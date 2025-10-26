@@ -18,9 +18,9 @@
 .p-price-heading__description {
   font-size: fz(14, 16);
   letter-spacing: 0.08em;
-  margin-block-start: 30px;
+  margin-block-start: 55px;
   @media (--md) {
-    margin-block-start: 37px;
+    margin-block-start: 62px;
     letter-spacing: 0.18em;
   }
 }
@@ -50,10 +50,20 @@
 .p-price-nav__item {
   background-color: var(--color-white);
   border-radius: 4px;
-
+  transition: background-color 0.3s ease-in-out;
   @container (min-width: 1100px) {
     aspect-ratio: revert;
     overflow: hidden;
+  }
+  &:hover {
+    background-color: var(--color-sub);
+    .p-price-nav__link-text {
+      color: var(--color-white);
+    }
+    .p-price-nav__link-arrow {
+      background-color: var(--color-white);
+      color: var(--color-sub);
+    }
   }
 }
 
@@ -67,6 +77,17 @@
     grid-template-columns: 100fr 160fr;
     align-items: center;
     grid-template-rows: 1fr;
+    .p-price-nav__link-arrow {
+      position: absolute;
+      bottom: auto;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 8px;
+      left: auto;
+      &::before {
+        transform: rotate(0deg);
+      }
+    }
   }
   img {
     @container (min-width: 1100px) {
@@ -76,26 +97,32 @@
       height: 100%;
     }
   }
-  &::before {
-    content: url('/public/images/svg/price_nav-icon--down.svg');
-    position: absolute;
-    display: inline-block;
-    bottom: -12px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 24px;
-    aspect-ratio: 1/1;
-    overflow: hidden;
-    z-index: 1;
-    @container (min-width: 1100px) {
-      content: url('/public/images/svg/price_nav-icon--right.svg');
+}
 
-      bottom: auto;
-      top: 50%;
-      transform: translateY(-50%);
-      right: 8px;
-      left: auto;
-    }
+.p-price-nav__link-arrow {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 24px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  z-index: 1;
+  background-color: var(--color-sub);
+  color: var(--color-white);
+  transition: background-color 0.3s ease-in-out;
+  &::before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: currentColor;
+    mask: url('/public/images/svg/chevron-right-1.svg') no-repeat center center /
+      contain;
+    transform: rotate(90deg);
   }
 }
 .p-price-nav__image {
@@ -104,11 +131,8 @@
   border-top-left-radius: 4px;
   aspect-ratio: 160/102;
   img {
-    height: auto;
-    object-position: center;
-    object-fit: cover;
+    height: 100%;
   }
-
   @container (min-width: 1100px) {
     border-top-right-radius: 0;
     border-top-left-radius: 0;
@@ -122,7 +146,8 @@
   padding-inline: 12px;
   padding-block: 8px 18px;
   @container (min-width: 1100px) {
-    padding: 10px 8px;
+    padding: 10px 8px 10px 12px;
+    justify-content: start;
   }
 }
 .p-price-nav__link-text {
@@ -132,6 +157,7 @@
   font-weight: var(--fw-regular);
   @container (min-width: 1100px) {
     line-height: 1.3;
+    text-align: start;
   }
 }
 .p-price-nav__small {

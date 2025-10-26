@@ -8,7 +8,7 @@ const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
 <section id='tips-section' aria-labelledby='tips-heading' class='p-tips'>
   <div class='l-container'>
     <div class='l-inner'>
-      <div class='p-tips__inner'>
+      <div id='tips-inner' class='p-tips__inner'>
         <header class='p-tips__heading'>
           <div class='p-tips__heading-img--upper'>
             <img src={`${imgBase}/svg/noshi_upper.svg`} alt='' loading='lazy' aria-hidden='true' />
@@ -31,7 +31,35 @@ const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
           }
         </ul>
         <Noshi />
+          <button type='button' class='p-tips__toggle' aria-controls='tips-inner' aria-expanded='false' data-state='closed'>
+            <span class='p-tips__toggle-text'>閉じる</span>
+            <span class='p-tips__toggle-icon-inner'>
+              <img src={`${imgBase}/svg/chevron-up.svg`} alt='' loading='lazy' aria-hidden='true' />
+            </span>
+          </button>
       </div>
     </div>
   </div>
 </section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const tipsInner = document.querySelector('#tips-inner');
+    const toggleButton = document.querySelector('.p-tips__toggle');
+    const toggleText = document.querySelector('.p-tips__toggle-text');
+    if(!tipsInner || !toggleButton || !toggleText) return;
+
+const updateState = () => {
+  const isclosed = tipsInner.classList.contains('_close');
+  toggleButton.setAttribute('aria-expanded', String(!isclosed));
+  (toggleButton as any).dataset.state = isclosed ? 'closed' : 'open';
+  toggleText.textContent = isclosed ? '開く' : '閉じる';
+};
+
+    toggleButton.addEventListener('click', function () {
+      tipsInner.classList.toggle('_close');
+      updateState();
+    });
+    updateState();
+  });
+</script>

@@ -34,7 +34,7 @@
 }
 .c-points__image {
   padding: 7px;
-  border: 1px dotted var(--color-sub3);
+  border: 3px dotted var(--color-sub);
   border-radius: 100%;
 }
 .c-points__text {
@@ -57,7 +57,7 @@
   font-weight: var(--fw-regular);
   font-size: fz(16, 18);
   line-height: 1;
-  color: var(--color-sub3);
+  color: #c2584a;
   display: grid;
   justify-content: center;
 }

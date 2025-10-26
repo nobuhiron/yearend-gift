@@ -98,39 +98,3 @@
 .p-noshi-case__img {
   max-width: 205px;
 }
-.p-noshi__close {
-  background-color: var(--color-deep-beige);
-  margin-inline: auto;
-  max-width: 233px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  margin-block-start: 20px;
-  @media (--md) {
-    margin-block-start: 30px;
-  }
-}
-.p-noshi__close-text {
-  color: var(--color-white);
-  font-weight: var(--fw-semibold);
-  font-family: var(--font-jp--sanserif);
-  letter-spacing: 0.04em;
-  line-height: 36px;
-}
-.p-noshi__close-button {
-  position: absolute;
-  border-radius: 50%;
-  width: 18px;
-  aspect-ratio: 1/1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  right: 13px;
-  background-color: var(--color-white);
-  img {
-    height: 100%;
-    object-fit: cover;
-  }
-}

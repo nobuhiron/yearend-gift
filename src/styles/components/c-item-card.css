@@ -1,12 +1,23 @@
 .c-item-card {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr;
+  grid-template-rows: 1fr auto;
+  gap: 20px;
+}
+.c-item-card__inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
   gap: 12px;
 }
 .c-item-card__content {
   display: grid;
-  grid-template-rows: 1fr 1fr auto auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto auto;
+  grid-row: span 2;
+}
+.c-item-card__text-wrapper {
+  grid-template-rows: auto auto;
 }
 .c-item-card__title {
   font-family: var(--font-jp--serif);
@@ -30,15 +41,67 @@
   font-weight: var(--fw-semibold);
   font-size: 24px;
   margin-block-start: 5px;
-  text-align: right;
+  text-align: left;
 }
 .c-item-card__link {
   display: block;
   background-color: var(--color-sub);
   color: var(--color-white);
+  border: 1px solid var(--color-sub);
   font-family: var(--font-jp--serif);
   text-align: center;
   padding-block: 15px;
   border-radius: 100px;
   margin-block-start: 20px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out,
+    border-color 0.3s ease-in-out;
+
+  .p-price-block__list._0 & {
+    background-color: var(--color-sub5);
+    border-color: var(--color-sub5);
+    &:hover {
+      background-color: var(--color-white);
+      color: var(--color-sub5);
+    }
+  }
+  .p-price-block__list._1 & {
+    background-color: var(--color-sub);
+    border-color: var(--color-sub);
+    &:hover {
+      background-color: var(--color-white);
+      color: var(--color-sub);
+    }
+  }
+  .p-price-block__list._2 & {
+    background-color: var(--color-sub3);
+    border-color: var(--color-sub3);
+    &:hover {
+      background-color: var(--color-white);
+      color: var(--color-sub3);
+    }
+  }
+  .p-price-block__list._3 & {
+    background-color: var(--color-main);
+    border-color: var(--color-main);
+    &:hover {
+      background-color: var(--color-white);
+      color: var(--color-white);
+    }
+  }
+  .p-sweets__assortments-list & {
+    background-color: var(--color-sub2);
+    border-color: var(--color-sub2);
+    &:hover {
+      background-color: var(--color-white);
+      color: var(--color-sub2);
+    }
+  }
+  .p-sweets__other-list & {
+    background-color: var(--color-sub6);
+    border-color: var(--color-sub6);
+    &:hover {
+      background-color: var(--color-white);
+      color: var(--color-sub6);
+    }
+  }
 }

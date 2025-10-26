@@ -1,0 +1,81 @@
+.c-nav__item {
+  width: min(100%, 620px);
+  margin-inline: auto;
+  container-type: inline-size;
+  &:hover {
+    .p-nav__link {
+      background-color: var(--color-sub);
+      color: var(--color-white);
+    }
+    .c-nav-link__arrow {
+      background-color: var(--color-white);
+      color: var(--color-sub);
+    }
+  }
+}
+
+.c-nav__link {
+  display: grid;
+  grid-template-columns: 108fr 227fr;
+  background-color: var(--color-white);
+  border-radius: var(--spacing-sm);
+  height: 100%;
+  transition: background-color 0.3s ease-in-out;
+  @container (min-width:321px) {
+    grid-template-columns: 80fr 180fr;
+  }
+}
+
+.c-nav-link__image {
+  aspect-ratio: 80/87;
+  @container (min-width: 400px) {
+    aspect-ratio: 108/70;
+  }
+  img {
+    height: 100%;
+  }
+}
+
+.c-nav-link__text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 16px 8px;
+
+  width: 100%;
+  font-size: 15px;
+  @container (min-width: 261px) {
+    padding: 15px 20px;
+  }
+}
+
+.c-nav-link__title {
+  font-family: var(--font-jp--serif);
+  font-weight: var(--fw-semibold);
+  font-size: fz(15, 16);
+}
+.c-nav-link__arrow {
+  color: var(--color-white);
+  background-color: var(--color-sub);
+  height: 24px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  transition: background-color 0.3s ease-in-out;
+  overflow: hidden;
+
+  @container (min-width: 261px) {
+    height: 20px;
+  }
+  &:before {
+    display: inline-block;
+    content: '';
+    mask: url('/public/images/svg/chevron-right-1.svg') no-repeat center center /
+      contain;
+    transition: color 0.3s ease-in-out;
+    background-color: currentColor;
+    width: 100%;
+    height: 100%;
+  }
+}

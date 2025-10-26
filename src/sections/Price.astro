@@ -1,16 +1,17 @@
 ---
 import PriceBlock from '../blocks/PriceBlock.astro';
 import { priceBlockData } from '../data/priceBlockData';
+import SectionTitle from '../components/SectionTitle.astro';
 const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
 ---
 
-<section class='p-price'>
+<section id='price-section' class='p-price' aria-labelledby='price-heading'>
   <div class='l-container'>
     <div class='l-inner'>
       <header class='p-price__heading'>
-        <h2 class='p-price-heading__title'>価格で選ぶ</h2>
+        <SectionTitle id='price-heading' title='価格で選ぶ' colorClass='_white' />
         <p class='p-price-heading__description'>
-          低価格から高級ギフトまで価格別におすすめの
+          低価格から高級ギフトまで価格別におすすめの<br class="is_sm">
           お歳暮・冬ギフトをご用意しています。
         </p>
       </header>
@@ -28,6 +29,7 @@ const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
                   >
                 </div>
               </div>
+              <span class='p-price-nav__link-arrow'></span>
             </a>
             <li class='p-price-nav__item'>
               <a href='#' class='p-price-nav__link'>
@@ -41,6 +43,7 @@ const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
                     >
                   </div>
                 </div>
+                <span class='p-price-nav__link-arrow'></span>
               </a>
             </li>
             <li class='p-price-nav__item'>
@@ -55,6 +58,7 @@ const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
                     >
                   </div>
                 </div>
+                 <span class='p-price-nav__link-arrow'></span>
               </a>
             </li>
             <li class='p-price-nav__item'>
@@ -67,18 +71,15 @@ const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
                     6,001<span class='p-price-nav__small'>円～</span>
                   </div>
                 </div>
+                <span class='p-price-nav__link-arrow'></span>
               </a>
             </li>
           </li>
         </ul>
+              </nav>
         <ul class='p-price__blocks'>
-          {
-            priceBlockData.map((item) => (
-              <PriceBlock title={item.title} imgBase={imgBase} />
-            ))
-          }
+          <PriceBlock />
         </ul>
-      </nav>
     </div>
   </div>
 </section>

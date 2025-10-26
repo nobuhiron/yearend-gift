@@ -46,7 +46,7 @@
   gap: 56px;
   container-type: inline-size;
   margin-block-start: 44px;
-  max-width: 836px;
+  max-width: 818px;
   margin-inline: auto;
   @media (--md) {
     margin-block-start: 36px;
@@ -90,6 +90,7 @@
   grid-column: 1/3;
   font-family: var(--font-jp--sanserif);
   letter-spacing: 0.04em;
+  font-size: fz(14, 16);
 }
 .p-wrapping-card__image {
   grid-column: 1/3;
@@ -123,22 +124,48 @@
   letter-spacing: 0.04em;
   text-align: center;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   padding-block: 15px;
   position: relative;
   &._noshi {
     background-color: var(--color-sub4);
   }
-  &::before {
-    content: url('/public/images/svg/shevron-right.svg');
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 12px;
-    aspect-ratio: 1/1;
+  &:hover {
+    .p-wrapping-card__link-arrow {
+      transform: translate(4px, -50%);
+    }
+  }
+}
+.p-wrapping-card__link-arrow {
+  color: currentColor;
+  background-color: var(--color-white);
+  height: 18px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  transition: background-color 0.3s ease-in-out;
+  overflow: hidden;
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(-50%);
+
+  &:before {
     display: inline-block;
-    width: 18px;
-    overflow: hidden;
+    content: '';
+    mask: url('/public/images/svg/chevron-right-1.svg') no-repeat center center /
+      contain;
+    transition: color 0.3s ease-in-out;
+    background-color: var(--color-sub3);
+    width: 100%;
+    height: 100%;
+  }
+  .p-wrapping-card__link._noshi & {
+    &:before {
+      background-color: var(--color-sub4);
+    }
   }
 }

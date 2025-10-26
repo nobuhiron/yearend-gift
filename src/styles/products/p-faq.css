@@ -14,9 +14,11 @@
   row-gap: 20px;
   max-width: 893px;
   margin-inline: auto;
+  margin-block-start: 90px;
   width: 100%;
   @container (min-width: 893px) {
     width: 63.78%;
+    margin-block-start: 65px;
   }
 }
 .p-faq__heading-title {

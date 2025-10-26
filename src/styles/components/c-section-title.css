@@ -1,0 +1,32 @@
+.c-section-title {
+  text-align: center;
+}
+
+.c-section-title__text {
+  font-family: var(--font-jp--serif);
+  font-weight: var(--fw-semibold);
+  font-size: fz(24, 32);
+  color: var(--color-text);
+  line-height: 1.41;
+  letter-spacing: 0.2em;
+  padding-block-end: 24px;
+  position: relative;
+  &._white {
+    color: var(--color-white);
+    &::after {
+      border-top: 2px dotted var(--color-white);
+    }
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    height: 1px;
+    border-top: 3px dotted var(--color-main);
+  }
+}

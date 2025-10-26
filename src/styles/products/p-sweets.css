@@ -9,10 +9,39 @@
   padding-block: 60px;
 }
 
+.p-sweets__assortments-cards {
+  margin-block-start: 50px;
+  @media (--md) {
+    margin-block-start: 80px;
+  }
+}
+
 .p-sweets__other {
   background-color: var(--color-white);
   padding-inline: 30px;
   padding-block: 60px;
+  position: relative;
+  @media (--md) {
+    width: 100vw;
+    margin-inline-start: calc(50% - 50vw);
+    margin-inline-end: calc(50% - 50vw);
+  }
+}
+.p-sweets__other-cards {
+  margin-block-start: 50px;
+  @media (--md) {
+    margin-block-start: 67px;
+  }
+}
+.p-sweets__gold-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 15px;
+  @media (--md) {
+    height: 30px;
+  }
 }
 
 .p-sweets__feature {
@@ -26,15 +55,14 @@
 }
 
 .p-sweets__feature__img-wrapper {
-
   @media (--lg) {
     position: relative;
   }
 }
 
 .p-sweets__feature__img {
-max-width: 835px;
-margin-inline: auto;
+  max-width: 835px;
+  margin-inline: auto;
 }
 .p-sweets__feature__points-list {
   display: grid;

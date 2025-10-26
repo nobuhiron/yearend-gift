@@ -4,3 +4,6 @@
   border-bottom-right-radius: 40px;
   border-top-left-radius: 40px;
 }
+.p-price-block__list {
+ margin-block-start: 52px;
+}

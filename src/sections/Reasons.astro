@@ -1,6 +1,7 @@
 ---
 import ReasonCard from '../components/ReasonCard.astro';
 import { reasonsItemData } from '../data/reasonsItemData';
+import SectionTitle from '../components/SectionTitle.astro';
 const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
 ---
 
@@ -24,7 +25,7 @@ const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
       breakpoints: {
         768: {
           perPage: 1,
-          gap: '1rem',
+          gap:'1rem',
           padding: '20px',
         },
       },
@@ -36,9 +37,9 @@ const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
   });
 </script>
 
-<section class='p-reasons'>
-  <h2 class='p-reasons__heading'>森半のギフトが<br />選ばれる理由</h2>
-  <div class='splide splide2' role='group' aria-label='選ばれる理由'>
+<section id='reasons-section' class='p-reasons' aria-labelledby='reasons-heading'>
+  <SectionTitle id='reasons-heading' title='森半のギフトが<br class="is_sm">選ばれる理由' />
+  <div class='splide splide2 p-reasons__carousel' role='group' aria-label='選ばれる理由'>
     <div class='splide__track'>
       <ul class='splide__list p-reasons__items'>
         {

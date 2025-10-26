@@ -1,0 +1,8 @@
+---
+const { id,title, colorClass } = Astro.props;
+---
+
+<h2 id={id} class='c-section-title'>
+    <span class={`c-section-title__text ${colorClass ?? ''}`} set:html={title}></span>
+</h2>
+

@@ -1,6 +1,7 @@
 .p-ranking {
   background: url('/public/images/wave-bg.jpg') no-repeat center center / cover;
   padding-block: 40px 60px;
+  position: relative;
   @media (--md) {
     padding-block: 80px 122px;
   }
@@ -74,6 +75,7 @@
 .p-ranking__title-wrapper {
   display: flex;
   flex-direction: column;
+  align-items: center;
   img:nth-child(3) {
     width: 82%;
     margin-inline: auto;
@@ -84,9 +86,30 @@
   @media (--md) {
     flex-direction: row;
     justify-content: center;
+    margin-block-start: 24px;
+  }
+}
+.p-ranking__title-img--wrapper {
+  width: 100%;
+  &._1 {
+    max-width: 413px;
+  }
+  &._2 {
+    max-width: 260px;
   }
 }
 
 .p-ranking__carousel {
   margin-block-start: 30px;
+}
+
+.p-ranking__gold-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 15px;
+  @media (--md) {
+    height: 30px;
+  }
 }

@@ -4,20 +4,19 @@ import ItemCard from '../components/ItemCard.astro';
 import SweetsFeature from '../blocks/SweetsFeature.astro';
 import { sweetsAssortmensItemData } from '../data/sweetsAssortmensItemData';
 import { sweetsOtherItemData } from '../data/sweetsOtherItemData';
+import SectionTitle from '../components/SectionTitle.astro';
 const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
 ---
 
-<section class='p-sweets'>
+<section id='sweets-section' class='p-sweets' aria-labelledby='sweets-heading'>
   <div class='l-container'>
-    <h2 class='p-sweets__heading'>抹茶スイーツで選ぶ</h2>
+    <SectionTitle id='sweets-heading' title='抹茶スイーツで選ぶ'/>
     <SweetsFeature />
     <Reviews />
     <div class='p-sweets__assortments'>
-      <h3 class='p-sweets__other-title'>
-        ヴァッフェル・フィナンシェ<br />詰め合わせ
-      </h3>
-      <div class='p-cards'>
-        <ul class='p-cards__list'>
+     <SectionTitle title='ヴァッフェル・フィナンシェ<br />詰め合わせ' />
+      <div class='p-cards p-sweets__assortments-cards'>
+        <ul class='p-cards__list '>
           {
             sweetsAssortmensItemData.map((item) => (
               <ItemCard
@@ -34,7 +33,7 @@ const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
     <div class='p-sweets__other'>
       <h3 class='p-sweets__other-title'>他おすすめスイーツ</h3>
       <div class='p-cards'>
-        <ul class='p-cards__list'>
+        <ul class='p-cards__list p-sweets__other-list'>
           {
             sweetsOtherItemData.map((item) => (
               <ItemCard
@@ -46,6 +45,9 @@ const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
             ))
           }
         </ul>
+      </div>
+      <div class='p-sweets__gold-line'>
+        <img src={`${imgBase}/svg/gold_line.svg`} alt='' />
       </div>
     </div>
   </div>

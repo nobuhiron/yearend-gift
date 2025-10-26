@@ -1,30 +1,27 @@
 ---
 import ItemCard from '../components/ItemCard.astro';
-import { priceItemData } from '../data/priceItemData';
-const { title, imgBase } = Astro.props;
+import PriceTitle from '../components/PriceTitle.astro';
+import { priceItemData2000less, priceItemData4000less, priceItemData6000less, priceItemData600over } from '../data/priceItemData';
+const itemSets = [priceItemData2000less, priceItemData4000less, priceItemData6000less, priceItemData600over];
+import { priceBlockData } from '../data/priceBlockData';
 ---
-
-<li class='p-price-block'>
-  <header class='p-price-block__header'>
-    <div class='p-price-block__header-img'>
-      <img src={`${imgBase}price_01.png`} alt='価格で選ぶ' />
-    </div>
-    <h3 class='p-price-block__header-title'>
-      {title}おすすめアイテム
-    </h3>
-  </header>
+{priceBlockData.map((block) => (
+  <li class='p-price-block'>
+<PriceTitle url={block.url} priceLow={block.priceLow} priceHigh={block.priceHigh} index={block.index} />
   <div class='p-cards'>
-    <ul class='p-cards__list'>
+    <ul class={`p-cards__list p-price-block__list _${block.index}`}>
       {
-        priceItemData.map((item) => (
+        itemSets[block.index].map((item) => (
           <ItemCard
             imgUrl={item.imgUrl}
             title={item.title}
             description={item.description}
             price={item.price}
+            index={block.index}
           />
         ))
       }
     </ul>
   </div>
 </li>
+))}

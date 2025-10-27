@@ -1,9 +1,9 @@
 .p-ranking {
   background: url('/public/images/wave-bg.jpg') no-repeat center center / cover;
-  padding-block: 40px 60px;
+  padding-block: 40px 75px;
   position: relative;
   @media (--md) {
-    padding-block: 80px 122px;
+    padding-block: 80px 151px;
   }
 }
 .p-ranking__deco-wrapper {
@@ -73,20 +73,21 @@
 }
 
 .p-ranking__title-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  grid-template-rows: repeat(2, auto);
   img:nth-child(3) {
     width: 82%;
-    margin-inline: auto;
     @media (--md) {
       width: 100%;
     }
   }
   @media (--md) {
-    flex-direction: row;
-    justify-content: center;
+    grid-template-columns: 413fr 260fr;
     margin-block-start: 24px;
+    align-items: center;
+    column-gap: 14px;
   }
 }
 .p-ranking__title-img--wrapper {

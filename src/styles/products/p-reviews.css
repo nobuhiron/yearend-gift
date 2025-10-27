@@ -15,9 +15,14 @@
     transform: translateX(-50%);
     width: 0;
     height: 0;
-    border-left: 14px solid transparent;
-    border-right: 14px solid transparent;
-    border-top: 20px solid #c2584a;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 16px solid #c2584a;
+    @media (--md) {
+      border-left: 14px solid transparent;
+      border-right: 14px solid transparent;
+      border-top: 20px solid #c2584a;
+    }
   }
 }
 .p-reviews__title {
@@ -27,8 +32,13 @@
   color: var(--color-white);
   background-color: #c2584a;
   border-radius: 8px;
+  padding-block: 14px;
   font-size: fz(24, 30);
   letter-spacing: 0.19em;
+  line-height:1;
+  @media (--md) {
+    padding-block: 16px;
+  }
 }
 .p-reviews__heading-ahirai {
   position: absolute;
@@ -44,7 +54,7 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 10px;
-  margin-block-start: 20px;
+  margin-block-start: 28px;
   @container (min-width: 580px) {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;

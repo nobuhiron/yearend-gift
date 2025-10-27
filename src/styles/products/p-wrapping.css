@@ -19,7 +19,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, auto);
-  max-width: 260px;
+  max-width: 290px;
   margin-inline: auto;
   @container (min-width: 620px) {
     max-width: 596px;

@@ -3,17 +3,11 @@ document.addEventListener('DOMContentLoaded', function () {
     type: 'slide',
     perPage: 3,
     perMove: 1,
-    gap: '40px',
+    gap: '20px',
     padding: { left: 170, right: 60 },
     breakpoints: {
       580: {
         perPage: 1,
-        gap: '40px',
-        padding: '20px',
-      },
-      768: {
-        perPage: 2,
-        gap: '1rem',
         padding: '20px',
       },
       1280: {

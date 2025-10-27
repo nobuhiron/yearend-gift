@@ -34,7 +34,7 @@
   max-width: 130px;
   &._side {
     left: 50px;
-    top: -10px;
+    top: 6px;
 
     transform: unset;
     aspect-ratio: 1/1;
@@ -68,9 +68,6 @@
   font-size: 36px;
   color: var(--color-sub);
   letter-spacing: 0.05em;
-  @media (--md) {
-    font-size: 23px;
-  }
 }
 
 .c-ranking-card__price-amount {

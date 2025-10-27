@@ -2,76 +2,109 @@
 const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
 ---
 
-<section id='wrapping-section' aria-labelledby='wrapping-heading' class='p-wrapping'>
+<section
+  id='wrapping-section'
+  aria-labelledby='wrapping-heading'
+  class='p-wrapping'
+>
   <div class='l-container'>
     <div class='l-inner'>
-    <div class='p-wrapping__inner'>
-      <header id='wrapping-heading' class='p-wrapping__header p-wrapping-header'>
-        <div class='p-wrapping-header__image-upper'>
-          <img src={`${imgBase}/svg/noshi_upper.svg`} alt='' loading='lazy' aria-hidden='true' />
-        </div>
-        <h2 class='p-wrapping-header__title'>
-          オンラインショップの<br class='is_sm' />便利なサービス
-        </h2>
-        <div class='p-wrapping-header__image-lower'>
-        <img src={`${imgBase}/svg/noshi_lower.svg`} alt='' loading='lazy' aria-hidden='true' />
-      </div>
-      </header>
-    <div class='p-wrapping__cards'>
-      <div class='p-wrapping__card p-wrapping-card'>
-        <header class='p-wrapping-card__header'>
-          <div class='p-wrapping-card__icon'>
+      <div class='p-wrapping__inner'>
+        <header
+          id='wrapping-heading'
+          class='p-wrapping__header p-wrapping-header'
+        >
+          <div class='p-wrapping-header__image-upper'>
             <img
-              src={`${imgBase}/svg/wrapping-free--pink.svg`}
-              alt='お歳暮の包み方'
+              src={`${imgBase}/svg/noshi_upper.svg`}
+              alt=''
+              loading='lazy'
+              aria-hidden='true'
             />
           </div>
-          <h3 class='p-wrapping-card__title'>
-            <span class='p-wrapping-card__title--small'>安心・丁寧な</span> のし紙サービス
-          </h3>
-          <p class='p-wrapping-card__description'>
-            お客様のご要望に合わせて、ショッピングカート内で、さまざまなパターンをお選びいただけます。
-          </p>
-        </header>
-        <div class='p-wrapping-card__link-wrapper'>
-          <a href='#' class='p-wrapping-card__link'>
-            ギフトラッピングについて
-            <span class='p-wrapping-card__link-arrow'></span>
-          </a>
-          <a href='#' class='p-wrapping-card__link _noshi'> のしガイド
-            <span class='p-wrapping-card__link-arrow'></span>
-          </a>
-        </div>
-        <div class='p-wrapping-card__image'>
-          <img src={`${imgBase}wrapping-noshi.jpg`} alt='お歳暮の包み方' />
-        </div>
-      </div>
-      <div class='p-wrapping__card p-wrapping-card'>
-        <header class='p-wrapping-card__header'>
-          <div class='p-wrapping-card__icon'>
+          <h2 class='p-wrapping-header__title'>
+            オンラインショップの<br class='is_sm' />便利なサービス
+          </h2>
+          <div class='p-wrapping-header__image-lower'>
             <img
-              src={`${imgBase}/svg/wrapping-free--orange.svg`}
-              alt='お歳暮の包み方'
+              src={`${imgBase}/svg/noshi_lower.svg`}
+              alt=''
+              loading='lazy'
+              aria-hidden='true'
             />
           </div>
-          <h3 class='p-wrapping-card__title'>
-            <span class='p-wrapping-card__title--small'>ご自宅送りで使える</span> 手提げ袋サービス
-          </h3>
-          <p class='p-wrapping-card__description'>
-            お客様のご要望に合わせて、ショッピングカート内で、商品サイズにあわせた、手提げ袋を同封します。
-          </p>
         </header>
-        <div class='p-wrapping-card__link-wrapper'>
-          <a href='#' class='p-wrapping-card__link'> お手提げ袋について
-          <span class='p-wrapping-card__link-arrow'></span>
-          </a>
-        </div>
-        <div class='p-wrapping-card__image'>
-          <img src={`${imgBase}wrapping-bag.jpg`} alt='お歳暮の包み方' />
+        <div class='p-wrapping__cards'>
+          <div class='p-wrapping__card p-wrapping-card'>
+            <header class='p-wrapping-card__header'>
+              <div class='p-wrapping-card__icon'>
+                <img
+                  src={`${imgBase}/svg/wrapping-free--pink.svg`}
+                  alt='無料'
+                />
+              </div>
+              <h3 class='p-wrapping-card__title'>
+                <span class='p-wrapping-card__title--small'>安心・丁寧な</span> のし紙サービス
+              </h3>
+              <p class='p-wrapping-card__description'>
+                お客様のご要望に合わせて、ショッピングカート内で、さまざまなパターンをお選びいただけます。
+              </p>
+            </header>
+            <div class='p-wrapping-card__link-wrapper'>
+              <a
+                href='https://www.tea-and-coffee.shop/view/page/gift#housou'
+                class='p-wrapping-card__link'
+              >
+                ギフトラッピングについて
+                <span class='p-wrapping-card__link-arrow'></span>
+              </a>
+              <a
+                href='https://www.tea-and-coffee.shop/view/page/gift#noshi'
+                class='p-wrapping-card__link _noshi'
+              >
+                のしガイド
+                <span class='p-wrapping-card__link-arrow'></span>
+              </a>
+            </div>
+            <div class='p-wrapping-card__image'>
+              <img
+                src={`${imgBase}wrapping-noshi.jpg`}
+                alt='熨斗をつけた包装の参考例'
+              />
+            </div>
+          </div>
+          <div class='p-wrapping__card p-wrapping-card'>
+            <header class='p-wrapping-card__header'>
+              <div class='p-wrapping-card__icon'>
+                <img
+                  src={`${imgBase}/svg/wrapping-free--orange.svg`}
+                  alt='無料'
+                />
+              </div>
+              <h3 class='p-wrapping-card__title'>
+                <span class='p-wrapping-card__title--small'
+                  >ご自宅送りで使える</span
+                > 手提げ袋サービス
+              </h3>
+              <p class='p-wrapping-card__description'>
+                お客様のご要望に合わせて、ショッピングカート内で、商品サイズにあわせた、手提げ袋を同封します。
+              </p>
+            </header>
+            <div class='p-wrapping-card__link-wrapper'>
+              <a
+                href='https://www.tea-and-coffee.shop/view/page/gift#paperbag'
+                class='p-wrapping-card__link'
+              >
+                お手提げ袋について
+                <span class='p-wrapping-card__link-arrow'></span>
+              </a>
+            </div>
+            <div class='p-wrapping-card__image'>
+              <img src={`${imgBase}wrapping-bag.jpg`} alt='紙袋の参考例' />
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  </div>
   </div>
 </section>

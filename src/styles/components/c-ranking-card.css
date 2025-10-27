@@ -1,3 +1,8 @@
+.c-ranking-card {
+  max-width: 350px;
+  margin-inline: auto;
+}
+
 .c-ranking-card__frame {
   background: url(/public/images/svg/ranking_bg--sp.svg) no-repeat center center /
     contain;

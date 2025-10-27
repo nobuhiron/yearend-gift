@@ -7,6 +7,13 @@
 .p-sweets__assortments {
   padding-inline: 30px;
   padding-block: 60px;
+  .c-section-title {
+    margin-inline-start: calc(50% - 50vw);
+    margin-inline-end: calc(50% - 50vw);
+    @media (--md) {
+      margin-inline: auto;
+    }
+  }
 }
 
 .p-sweets__assortments-cards {

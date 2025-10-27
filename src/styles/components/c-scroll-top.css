@@ -1,0 +1,20 @@
+.c-scroll-top {
+  display: inline-block;
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 50px;
+  aspect-ratio: 1/1;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+  @media (--lg) {
+    bottom: 62px;
+    right: 168px;
+  }
+}
+
+.c-scroll-top.is-visible {
+  opacity: 1;
+  visibility: visible;
+}

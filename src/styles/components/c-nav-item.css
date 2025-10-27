@@ -3,7 +3,7 @@
   margin-inline: auto;
   container-type: inline-size;
   &:hover {
-    .p-nav__link {
+    .c-nav__link {
       background-color: var(--color-sub);
       color: var(--color-white);
     }

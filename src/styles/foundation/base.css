@@ -65,3 +65,9 @@ img {
     display: none;
   }
 }
+.is_lg {
+  display: none;
+  @media (--lg) {
+    display: block;
+  }
+}

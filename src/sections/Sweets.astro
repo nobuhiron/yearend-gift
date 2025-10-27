@@ -10,13 +10,15 @@ const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
 
 <section id='sweets-section' class='p-sweets' aria-labelledby='sweets-heading'>
   <div class='l-container'>
-    <SectionTitle id='sweets-heading' title='抹茶スイーツで選ぶ'/>
+    <SectionTitle id='sweets-heading' title='抹茶スイーツで選ぶ' />
     <SweetsFeature />
     <Reviews />
     <div class='p-sweets__assortments'>
-     <SectionTitle title='ヴァッフェル・フィナンシェ<br />詰め合わせ' />
+      <SectionTitle
+        title='ヴァッフェル・フィナンシェ<br class="is_sm" />詰め合わせ'
+      />
       <div class='p-cards p-sweets__assortments-cards'>
-        <ul class='p-cards__list '>
+        <ul class='p-cards__list'>
           {
             sweetsAssortmensItemData.map((item) => (
               <ItemCard

@@ -8,14 +8,24 @@ const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
 <section id='tips-section' aria-labelledby='tips-heading' class='p-tips'>
   <div class='l-container'>
     <div class='l-inner'>
-      <div id='tips-inner' class='p-tips__inner'>
+      <div id='tips-inner' class='p-tips__inner _close'>
         <header class='p-tips__heading'>
           <div class='p-tips__heading-img--upper'>
-            <img src={`${imgBase}/svg/noshi_upper.svg`} alt='' loading='lazy' aria-hidden='true' />
+            <img
+              src={`${imgBase}/svg/noshi_upper.svg`}
+              alt=''
+              loading='lazy'
+              aria-hidden='true'
+            />
           </div>
           <h2 id='tips-heading' class='p-tips__title'>お歳暮の豆知識</h2>
           <div class='p-tips__heading-img--lower'>
-            <img src={`${imgBase}/svg/noshi_lower.svg`} alt='' loading='lazy' aria-hidden='true' />
+            <img
+              src={`${imgBase}/svg/noshi_lower.svg`}
+              alt=''
+              loading='lazy'
+              aria-hidden='true'
+            />
           </div>
         </header>
         <ul class='p-tips__list'>
@@ -31,12 +41,23 @@ const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
           }
         </ul>
         <Noshi />
-          <button type='button' class='p-tips__toggle' aria-controls='tips-inner' aria-expanded='false' data-state='closed'>
-            <span class='p-tips__toggle-text'>閉じる</span>
-            <span class='p-tips__toggle-icon-inner'>
-              <img src={`${imgBase}/svg/chevron-up.svg`} alt='' loading='lazy' aria-hidden='true' />
-            </span>
-          </button>
+        <button
+          type='button'
+          class='p-tips__toggle'
+          aria-controls='tips-inner'
+          aria-expanded='false'
+          data-state='closed'
+        >
+          <span class='p-tips__toggle-text'>閉じる</span>
+          <span class='p-tips__toggle-icon-inner'>
+            <img
+              src={`${imgBase}/svg/chevron-up.svg`}
+              alt=''
+              loading='lazy'
+              aria-hidden='true'
+            />
+          </span>
+        </button>
       </div>
     </div>
   </div>
@@ -47,14 +68,14 @@ const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
     const tipsInner = document.querySelector('#tips-inner');
     const toggleButton = document.querySelector('.p-tips__toggle');
     const toggleText = document.querySelector('.p-tips__toggle-text');
-    if(!tipsInner || !toggleButton || !toggleText) return;
+    if (!tipsInner || !toggleButton || !toggleText) return;
 
-const updateState = () => {
-  const isclosed = tipsInner.classList.contains('_close');
-  toggleButton.setAttribute('aria-expanded', String(!isclosed));
-  (toggleButton as any).dataset.state = isclosed ? 'closed' : 'open';
-  toggleText.textContent = isclosed ? '開く' : '閉じる';
-};
+    const updateState = () => {
+      const isclosed = tipsInner.classList.contains('_close');
+      toggleButton.setAttribute('aria-expanded', String(!isclosed));
+      (toggleButton as any).dataset.state = isclosed ? 'closed' : 'open';
+      toggleText.textContent = isclosed ? '開く' : '閉じる';
+    };
 
     toggleButton.addEventListener('click', function () {
       tipsInner.classList.toggle('_close');

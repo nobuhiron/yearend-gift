@@ -6,7 +6,7 @@ const itemSets = [priceItemData2000less, priceItemData4000less, priceItemData600
 import { priceBlockData } from '../data/priceBlockData';
 ---
 {priceBlockData.map((block) => (
-  <li class='p-price-block'>
+  <li id={`price-block-${block.index}`} class='p-price-block'>
 <PriceTitle url={block.url} priceLow={block.priceLow} priceHigh={block.priceHigh} index={block.index} />
   <div class='p-cards'>
     <ul class={`p-cards__list p-price-block__list _${block.index}`}>

@@ -13,9 +13,6 @@
 }
 
 /* Splide カスタムスタイル */
-.p-reasons .splide {
-  margin-top: 3rem;
-}
 
 .p-reasons .splide__arrow {
   background: var(--color-main);
@@ -53,9 +50,7 @@
 
 /* レスポンシブ対応 */
 @media (max-width: 768px) {
-  .p-reasons .splide {
-    margin-top: 2rem;
-  }
+  
 
   .p-reasons .splide__arrow {
     width: 2.5rem;

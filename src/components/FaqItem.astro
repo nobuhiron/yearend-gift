@@ -14,7 +14,7 @@ const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
   <div class='c-faq-item__panel'>
     <div class='c-faq-item__panel-inner'>
       <span class='c-faq-item__number'>A</span>
-      <p class='c-faq-item__description'>{description}</p>
+      <p class='c-faq-item__description' set:html={description}></p>
     </div>
   </div>
 </details>

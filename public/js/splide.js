@@ -6,11 +6,11 @@ document.addEventListener('DOMContentLoaded', function () {
     gap: '20px',
     padding: { left: 170, right: 60 },
     breakpoints: {
-      580: {
+      930: {
         perPage: 1,
         padding: '20px',
       },
-      1280: {
+      1240: {
         perPage: 2,
         gap: '1rem',
         padding: '20px',

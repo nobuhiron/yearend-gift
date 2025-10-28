@@ -8,13 +8,14 @@
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s, visibility 0.3s;
+  z-index: 100;
   @media (--lg) {
     bottom: 62px;
     right: 168px;
   }
 }
 
-.c-scroll-top.is-visible {
+.c-scroll-top.is-active {
   opacity: 1;
   visibility: visible;
 }

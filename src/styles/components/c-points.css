@@ -9,11 +9,20 @@
   }
   &._01 {
     top: 18%;
-    right: 10%;
+    right: 2%;
+
+    @media (--xl) {
+      top: 18%;
+      right: 10%;
+    }
   }
   &._02 {
     bottom: 15%;
-    right: 4%;
+    right: -6%;
+    @media (--xl) {
+      bottom: 15%;
+      right: 4%;
+    }
   }
   &._03 {
     bottom: 4%;
@@ -21,11 +30,19 @@
   }
   &._04 {
     top: 6%;
-    right: 8%;
+    right: 0%;
+    @media (--xl) {
+      top: 6%;
+      right: 8%;
+    }
   }
   &._05 {
     bottom: 20%;
-    right: 9%;
+    right: 1%;
+    @media (--xl) {
+      bottom: 20%;
+      right: 9%;
+    }
   }
   &._06 {
     bottom: -2%;

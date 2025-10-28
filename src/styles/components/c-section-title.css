@@ -11,6 +11,8 @@
   letter-spacing: 0.2em;
   padding-block-end: 24px;
   position: relative;
+  display: inline-block;
+  width: 100%;
   &._white {
     color: var(--color-white);
     &::after {

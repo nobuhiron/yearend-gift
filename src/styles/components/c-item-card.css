@@ -88,7 +88,7 @@
       color: var(--color-main);
     }
   }
-  .p-sweets__assortments-list & {
+  .p-sweets__assortments-cards & {
     background-color: var(--color-sub2);
     border-color: var(--color-sub2);
     &:hover {
@@ -96,7 +96,7 @@
       color: var(--color-sub2);
     }
   }
-  .p-sweets__other-list & {
+  .p-sweets__other-cards & {
     background-color: var(--color-sub6);
     border-color: var(--color-sub6);
     &:hover {

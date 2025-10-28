@@ -113,4 +113,7 @@
   @media (--md) {
     height: 30px;
   }
+  img {
+    height: 100%;
+  }
 }

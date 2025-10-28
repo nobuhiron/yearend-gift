@@ -7,6 +7,8 @@
   background-color: #d4b987;
   height: 70px;
   padding-inline: 12px 14px;
+  cursor: pointer;
+
   @media (--md) {
     height: 57px;
     padding-inline: 40px 30px;
@@ -28,7 +30,6 @@
   flex: 0 0 12px;
   margin-inline-start: 9px;
   aspect-ratio: 2/1;
-  cursor: pointer;
 }
 .c-faq-item[open] .c-faq-item__button img {
   transform: rotate(0deg);
@@ -40,10 +41,9 @@
 }
 .c-faq-item__panel {
   display: grid;
-  grid-template-rows: 0fr; /* 閉じている時は0 */
-  transition: grid-template-rows 0.3s ease;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.5s;
   background-color: var(--color-white);
-  overflow: hidden;
   .c-faq-item[open] & {
     grid-template-rows: 1fr;
   }

@@ -21,10 +21,3 @@
     margin-block-start: 65px;
   }
 }
-.p-faq__heading-title {
-  font-family: var(--font-jp--serif);
-  font-weight: var(--fw-semibold);
-  font-size: fz(24, 36);
-  text-align: center;
-  letter-spacing: 0.27em;
-}

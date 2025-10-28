@@ -1,27 +1,44 @@
 ---
 import ItemCard from '../components/ItemCard.astro';
 import PriceTitle from '../components/PriceTitle.astro';
-import { priceItemData2000less, priceItemData4000less, priceItemData6000less, priceItemData600over } from '../data/priceItemData';
-const itemSets = [priceItemData2000less, priceItemData4000less, priceItemData6000less, priceItemData600over];
+import {
+  priceItemData2000less,
+  priceItemData4000less,
+  priceItemData6000less,
+  priceItemData600over,
+} from '../data/priceItemData';
+const itemSets = [
+  priceItemData2000less,
+  priceItemData4000less,
+  priceItemData6000less,
+  priceItemData600over,
+];
 import { priceBlockData } from '../data/priceBlockData';
 ---
-{priceBlockData.map((block) => (
-  <li id={`price-block-${block.index}`} class='p-price-block'>
-<PriceTitle url={block.url} priceLow={block.priceLow} priceHigh={block.priceHigh} index={block.index} />
-  <div class='p-cards'>
-    <ul class={`p-cards__list p-price-block__list _${block.index}`}>
-      {
-        itemSets[block.index].map((item) => (
-          <ItemCard
-            imgUrl={item.imgUrl}
-            title={item.title}
-            description={item.description}
-            price={item.price}
-            index={block.index}
-          />
-        ))
-      }
-    </ul>
-  </div>
-</li>
-))}
+
+{
+  priceBlockData.map((block) => (
+    <li id={`price-block-${block.index}`} class='p-price-block'>
+      <PriceTitle
+        url={block.url}
+        priceLow={block.priceLow}
+        priceHigh={block.priceHigh}
+        index={block.index}
+      />
+      <div class='p-cards'>
+        <ul class={`p-cards__list p-price-block__list _${block.index}`}>
+          {itemSets[block.index].map((item) => (
+            <ItemCard
+              fileName={item.fileName}
+              href={item.code}
+              title={item.title}
+              description={item.description}
+              price={item.price}
+              index={block.index}
+            />
+          ))}
+        </ul>
+      </div>
+    </li>
+  ))
+}

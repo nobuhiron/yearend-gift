@@ -1,25 +1,32 @@
 ---
-const { imgUrl, title, description, price, index } = Astro.props;
+const { fileName, code, title, description, price, index } = Astro.props;
 const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
+const linkBase = import.meta.env.PUBLIC_LINK_BASE;
 ---
 
 <li class='c-item-card'>
-  <a href='#' class='c-item-card__inner'>
-  <div class='c-item-card__image'>
-    <img src={`${imgBase}/${imgUrl}`} alt='価格で選ぶ' />
-  </div>
+  <a
+    href={`${linkBase}${code}`}
+    class='c-item-card__inner'
+  >
+    <div class='c-item-card__image'>
+      <img src={`${imgBase}/${fileName}`} alt='価格で選ぶ' />
+    </div>
     <div class='c-item-card__content'>
       <div class='c-item-card__text-wrapper'>
-      <h4 class='c-item-card__title'>{title}</h4>
-      <p class='c-item-card__description'>{description}</p>
+        <h4 class='c-item-card__title'>{title}</h4>
+        <p class='c-item-card__description'>{description}</p>
       </div>
-    <div class='c-item-card__line'>
-      <img src={`${imgBase}/svg/line.svg`} alt='line' />
+      <div class='c-item-card__line'>
+        <img src={`${imgBase}/svg/line.svg`} alt='line' />
+      </div>
+      <div class='c-item-card__price'>
+        {price}<span class='c-item-card__price-amount'>(税込)</span>
+      </div>
     </div>
-    <div class='c-item-card__price'>
-      {price}<span class='c-item-card__price-amount'>(税込)</span>
-    </div>
-  </div>
   </a>
-  <a href='#' class='c-item-card__link'>詳しく見る</a>
+  <a
+    href={`${linkBase}${code}`}
+    class='c-item-card__link'>詳しく見る</a
+  >
 </li>

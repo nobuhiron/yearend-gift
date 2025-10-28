@@ -4,7 +4,7 @@
   background-color: var(--color-bg);
   padding-block: 40px 63px;
   container-type: inline-size;
-  media(--md) {
+  @media (--md) {
     padding-block: 35px 38px;
   }
 }
@@ -18,4 +18,3 @@
     gap: 20px;
   }
 }
-

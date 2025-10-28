@@ -1,5 +1,5 @@
 .p-sweets {
-  background: url('/public/images/sweets-bg.jpg') no-repeat center center /
+  background: url('https://gigaplus.makeshop.jp/morihan1836/feature-page/yearend-gift/images/sweets-bg.jpg') no-repeat center center /
     cover;
   padding-block: 60px;
   @media (--md) {

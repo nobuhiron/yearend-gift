@@ -23,15 +23,13 @@
     left: 0;
     width: calc(193 / 335 * 100%);
     aspect-ratio: 193 / 143;
-    background: url('/public/images/svg/ashirai_reason.svg') center center /
-      cover;
+    background: url('../images/svg/ashirai_reason.svg') center center / cover;
     z-index: -1;
     max-width: 271px;
   }
   &:nth-child(1) {
     &::after {
-      background: url('/public/images/svg/ashirai_logo.svg') center center /
-        cover;
+      background: url('../images/svg/ashirai_logo.svg') center center / cover;
       width: calc(170 / 335 * 100%);
       aspect-ratio: 1/1;
       max-width: 214px;
@@ -91,7 +89,7 @@
 .c-reason-card__link {
   display: block;
   background-color: var(--color-sub5);
-  color: var(--color-white);
+  color: var(--color-white) !important;
   border-radius: 100px;
   text-align: center;
   padding-block: 7px;
@@ -109,6 +107,6 @@
   }
   &:hover {
     background-color: var(--color-white);
-    color: var(--color-sub5);
+    color: var(--color-sub5) !important;
   }
 }

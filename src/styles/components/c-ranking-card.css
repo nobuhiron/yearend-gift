@@ -4,7 +4,7 @@
 }
 
 .c-ranking-card__frame {
-  background: url(/public/images/svg/ranking_bg--sp.svg) no-repeat center center /
+  background: url('../images/svg/ranking_bg--sp.svg') no-repeat center center /
     contain;
   position: relative;
   display: grid;

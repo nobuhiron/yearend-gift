@@ -1,4 +1,5 @@
 ---
+import '../styles/style.css';
 const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
 ---
 
@@ -15,12 +16,11 @@ const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
       rel='stylesheet'
     />
     <link
-    rel='stylesheet'
-    href='https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css'
+      rel='stylesheet'
+      href='https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css'
     />
-    <link rel='stylesheet' href='./src/styles/style.css' />
     <script
-    src='https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js'
+      src='https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js'
     ></script>
     <script src='./public/js/index.js' defer></script>
     <script src='./public/js/splide.js' defer></script>
@@ -30,7 +30,7 @@ const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
   <body>
     <slot />
     <a href='#' class='c-scroll-top'>
-      <img src={`${imgBase}/svg/pagetop.svg`} alt='ページトップへ戻る' />
+      <img src={`${imgBase}svg/pagetop.svg`} alt='ページトップへ戻る' />
     </a>
   </body>
 </html>

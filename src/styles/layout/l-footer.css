@@ -60,7 +60,7 @@
 }
 
 .l-footer__nav-link {
-  color: var(--color-white);
+  color: var(--color-white) !important;
   font-size: 14px;
   font-family: var(--font-jp--serif);
   font-weight: var(--fw-bold);

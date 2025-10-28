@@ -46,7 +46,7 @@
 .c-item-card__link {
   display: block;
   background-color: var(--color-sub);
-  color: var(--color-white);
+  color: var(--color-white) !important;
   border: 1px solid var(--color-sub);
   font-family: var(--font-jp--serif);
   text-align: center;
@@ -61,7 +61,7 @@
     border-color: var(--color-sub5);
     &:hover {
       background-color: var(--color-white);
-      color: var(--color-sub5);
+      color: var(--color-sub5) !important;
     }
   }
   .p-price-block__list._1 & {
@@ -69,7 +69,7 @@
     border-color: var(--color-sub);
     &:hover {
       background-color: var(--color-white);
-      color: var(--color-sub);
+      color: var(--color-sub) !important;
     }
   }
   .p-price-block__list._2 & {
@@ -77,7 +77,7 @@
     border-color: var(--color-sub3);
     &:hover {
       background-color: var(--color-white);
-      color: var(--color-sub3);
+      color: var(--color-sub3) !important;
     }
   }
   .p-price-block__list._3 & {
@@ -85,7 +85,7 @@
     border-color: var(--color-main);
     &:hover {
       background-color: var(--color-white);
-      color: var(--color-main);
+      color: var(--color-main) !important;
     }
   }
   .p-sweets__assortments-cards & {
@@ -93,7 +93,7 @@
     border-color: var(--color-sub2);
     &:hover {
       background-color: var(--color-white);
-      color: var(--color-sub2);
+      color: var(--color-sub2) !important;
     }
   }
   .p-sweets__other-cards & {
@@ -101,7 +101,7 @@
     border-color: var(--color-sub6);
     &:hover {
       background-color: var(--color-white);
-      color: var(--color-sub6);
+      color: var(--color-sub6) !important;
     }
   }
 }

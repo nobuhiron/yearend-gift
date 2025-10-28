@@ -71,8 +71,10 @@
   &:before {
     display: inline-block;
     content: '';
-    mask: url('/public/images/svg/chevron-right-1.svg') no-repeat center center /
-      contain;
+    mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 9 17'><path fill-rule='evenodd' clip-rule='evenodd' d='M7.19466 9.00362L3.18762 13.0107L2.18604 12.0091L5.69229 8.50283L2.18604 4.99658L3.18762 3.995L7.19466 8.00204C7.32745 8.13487 7.40205 8.315 7.40205 8.50283C7.40205 8.69065 7.32745 8.87079 7.19466 9.00362Z' fill='currentColor'/></svg>")
+      no-repeat center / contain;
+    -webkit-mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 9 17'><path fill-rule='evenodd' clip-rule='evenodd' d='M7.19466 9.00362L3.18762 13.0107L2.18604 12.0091L5.69229 8.50283L2.18604 4.99658L3.18762 3.995L7.19466 8.00204C7.32745 8.13487 7.40205 8.315 7.40205 8.50283C7.40205 8.69065 7.32745 8.87079 7.19466 9.00362Z' fill='currentColor'/></svg>")
+      no-repeat center / contain;
     transition: color 0.3s ease-in-out;
     background-color: currentColor;
     width: 100%;

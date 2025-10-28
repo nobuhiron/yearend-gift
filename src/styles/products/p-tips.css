@@ -6,7 +6,7 @@
   }
 }
 .p-tips__bg {
-  background: url('/public/images/tips-bg.jpg') no-repeat center center / cover;
+  background: url('https://gigaplus.makeshop.jp/morihan1836/feature-page/yearend-gift/images/tips-bg.jpg') no-repeat center center / cover;
   position: relative;
   &::after {
     content: '';

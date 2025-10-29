@@ -1,7 +1,8 @@
 @import '../global/variables.css';
 
 .p-reasons {
-  background: url('https://gigaplus.makeshop.jp/morihan1836/feature-page/yearend-gift/images/wave-bg.jpg') no-repeat center center / cover;
+  background: url('https://gigaplus.makeshop.jp/morihan1836/feature-page/yearend-gift/images/wave-bg.jpg')
+    no-repeat center center / cover;
   padding-block: 60px 93px;
 }
 
@@ -14,51 +15,17 @@
 
 /* Splide カスタムスタイル */
 
-.p-reasons .splide__arrow {
-  background: var(--color-main);
-  border-radius: 50%;
-  width: 3rem;
-  height: 3rem;
-  opacity: 0.8;
-  transition: opacity 0.3s ease;
-}
-
-.p-reasons .splide__arrow:hover {
-  opacity: 1;
-}
-
-.p-reasons .splide__arrow svg {
-  fill: white;
-  width: 1.2rem;
-  height: 1.2rem;
-}
-
 .p-reasons .splide__pagination {
   bottom: -2rem;
 }
 
 .p-reasons .splide__pagination__page {
-  background: var(--color-sub);
   opacity: 0.3;
   transition: opacity 0.3s ease;
+  border: 1px solid #bf9c35;
 }
 
 .p-reasons .splide__pagination__page.is-active {
-  background: var(--color-main);
+  background: #bf9c35;
   opacity: 1;
-}
-
-/* レスポンシブ対応 */
-@media (max-width: 768px) {
-
-
-  .p-reasons .splide__arrow {
-    width: 2.5rem;
-    height: 2.5rem;
-  }
-
-  .p-reasons .splide__arrow svg {
-    width: 1rem;
-    height: 1rem;
-  }
 }

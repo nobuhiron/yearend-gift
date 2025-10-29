@@ -1,11 +1,13 @@
 .c-ranking-card {
   max-width: 350px;
-  margin-inline: auto;
+  @container (min-width: 920px) {
+    min-height: 494px;
+  }
 }
 
 .c-ranking-card__frame {
-  background: url('../images/svg/ranking_bg--sp.svg') no-repeat center center /
-    contain;
+  background: url('https://gigaplus.makeshop.jp/morihan1836/feature-page/yearend-gift/images/svg/ranking_bg--sp.svg')
+    no-repeat center center / contain;
   position: relative;
   display: grid;
   grid-template-columns: 1fr;
@@ -14,6 +16,11 @@
   padding-block-start: 42px;
   padding-inline: 32px;
   margin-block-start: 34px;
+  @media (--md) {
+    background: url('https://gigaplus.makeshop.jp/morihan1836/feature-page/yearend-gift/images/svg/ranking_bg.svg')
+      no-repeat center center / contain;
+    aspect-ratio: 349 / 452;
+  }
   &._02 {
     grid-template-rows: 206px auto auto auto;
     @media (--md) {
@@ -34,11 +41,14 @@
   max-width: 130px;
   &._side {
     left: 50px;
-    top: 6px;
+    top: -10px;
 
     transform: unset;
     aspect-ratio: 1/1;
     max-width: 95px;
+    @media (--md) {
+      top: -10px;
+    }
   }
 }
 .c-ranking-card__image {

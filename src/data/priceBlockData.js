@@ -18,7 +18,7 @@ export const priceBlockData = [
     index: 2,
   },
   {
-    url: '600over',
+    url: '6001over',
     priceLow: '6,001',
     priceHigh: '',
     index: 3,

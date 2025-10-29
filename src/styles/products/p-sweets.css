@@ -1,6 +1,6 @@
 .p-sweets {
-  background: url('https://gigaplus.makeshop.jp/morihan1836/feature-page/yearend-gift/images/sweets-bg.jpg') no-repeat center center /
-    cover;
+  background: url('https://gigaplus.makeshop.jp/morihan1836/feature-page/yearend-gift/images/sweets-bg.jpg')
+    no-repeat center center / cover;
   padding-block: 60px;
   @media (--md) {
     padding-block-end: 0;
@@ -31,11 +31,10 @@
   padding-inline: 30px;
   padding-block: 60px;
   position: relative;
+  margin-inline: 20px;
   @media (--md) {
-    width: 100vw;
-    margin-inline-start: calc(50% - 50vw);
-    margin-inline-end: calc(50% - 50vw);
     padding-block-end: 120px;
+    margin-inline: 0;
   }
 }
 .p-sweets__other-cards {
@@ -61,6 +60,7 @@
 
 .p-sweets__feature {
   padding-block: 35px 80px;
+  container-type: inline-size;
 }
 
 .p-sweets__feature-list {
@@ -70,7 +70,7 @@
 }
 
 .p-sweets__feature__img-wrapper {
-  @media (--lg) {
+  @container (min-width: 920px) {
     position: relative;
   }
 }
@@ -83,7 +83,9 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
-  @media (--lg) {
+  max-width: 690px;
+  margin-inline: auto;
+  @container (min-width: 920px) {
     display: contents;
   }
 }

@@ -3,50 +3,59 @@
   grid-template-columns: 100fr 226fr;
   align-items: center;
   gap: 14px;
-  @media (--lg) {
+  @container (min-width: 920px) {
     position: absolute;
-    max-width: 420px;
   }
   &._01 {
     top: 18%;
     right: 2%;
 
-    @media (--xl) {
+    @container (min-width: 920px) {
       top: 18%;
       right: 10%;
+      max-width: 405px;
     }
   }
   &._02 {
     bottom: 15%;
     right: -6%;
-    @media (--xl) {
+    @container (min-width: 920px) {
       bottom: 15%;
       right: 4%;
+      max-width: 363px;
     }
   }
   &._03 {
     bottom: 4%;
     left: 15%;
+    @container (min-width: 920px) {
+      max-width: 348px;
+    }
   }
   &._04 {
     top: 6%;
     right: 0%;
-    @media (--xl) {
+    @container (min-width: 920px) {
       top: 6%;
-      right: 8%;
+      right: 2%;
+      max-width: 397px;
     }
   }
   &._05 {
     bottom: 20%;
     right: 1%;
-    @media (--xl) {
+    @container (min-width: 920px) {
       bottom: 20%;
-      right: 9%;
+      right: 6%;
+      max-width: 395px;
     }
   }
   &._06 {
     bottom: -2%;
     left: 15%;
+    @container (min-width: 920px) {
+      max-width: 413px;
+    }
   }
 }
 .c-points__image {

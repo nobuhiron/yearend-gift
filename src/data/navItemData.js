@@ -15,12 +15,12 @@ export const navItemData = [
     title: '選ばれる理由',
   },
   {
-    id: 'price-section',
+    id: 'sweets-section',
     index: '04',
     title: '人気の抹茶<br />スイーツで選ぶ',
   },
   {
-    id: 'sweets-section',
+    id: 'price-section',
     index: '05',
     title: '価格で選ぶ',
   },

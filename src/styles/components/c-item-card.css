@@ -41,7 +41,7 @@
   font-weight: var(--fw-semibold);
   font-size: 24px;
   margin-block-start: 5px;
-  text-align: left;
+  text-align: right;
 }
 .c-item-card__link {
   display: block;

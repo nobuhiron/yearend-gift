@@ -1,7 +1,7 @@
 .c-scroll-top {
   display: inline-block;
   position: fixed;
-  bottom: 80px;
+  bottom: 20px;
   right: 20px;
   width: 50px;
   aspect-ratio: 1/1;

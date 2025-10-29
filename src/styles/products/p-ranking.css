@@ -1,5 +1,6 @@
 .p-ranking {
-  background: url('https://gigaplus.makeshop.jp/morihan1836/feature-page/yearend-gift/images/wave-bg.jpg') no-repeat center center / cover;
+  background: url('https://gigaplus.makeshop.jp/morihan1836/feature-page/yearend-gift/images/wave-bg.jpg')
+    no-repeat center center / cover;
   padding-block: 40px 75px;
   position: relative;
   @media (--md) {
@@ -115,5 +116,17 @@
   }
   img {
     height: 100%;
+  }
+}
+
+.splide__arrow {
+  background: #bf9c35;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  transition: opacity 0.3s ease;
+  @media (--md) {
+    width: 60px;
+    height: 60px;
   }
 }

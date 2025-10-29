@@ -5,8 +5,6 @@ import SectionTitle from '../components/SectionTitle.astro';
 const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
 ---
 
-
-
 <section
   id='reasons-section'
   class='p-reasons'
@@ -34,6 +32,32 @@ const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
           ))
         }
       </ul>
+    </div>
+    <div class='splide__arrows'>
+      <button class='splide__arrow splide__arrow--prev' aria-label='前へ'>
+        <svg
+          xmlns='http://www.w3.org/2000/svg'
+          width='200'
+          height='104.501'
+          viewBox='0 0 200 104.501'
+          ><path
+            d='M139.518,267.544A9.545,9.545,0,0,0,133.972,285l36.374,25.285H20.139a9.545,9.545,0,1,0,0,19.09h150.44l-36.742,25.256a9.546,9.546,0,1,0,10.816,15.732l61.808-42.493a9.545,9.545,0,0,0,.04-15.7l-61.633-42.848a9.544,9.544,0,0,0-5.349-1.781Z'
+            transform='translate(-10.594 -267.542)'
+            fill='#fff'></path></svg
+        >
+      </button>
+      <button class='splide__arrow splide__arrow--next' aria-label='次へ'>
+        <svg
+          xmlns='http://www.w3.org/2000/svg'
+          width='200'
+          height='104.501'
+          viewBox='0 0 200 104.501'
+          ><path
+            d='M139.518,267.544A9.545,9.545,0,0,0,133.972,285l36.374,25.285H20.139a9.545,9.545,0,1,0,0,19.09h150.44l-36.742,25.256a9.546,9.546,0,1,0,10.816,15.732l61.808-42.493a9.545,9.545,0,0,0,.04-15.7l-61.633-42.848a9.544,9.544,0,0,0-5.349-1.781Z'
+            transform='translate(-10.594 -267.542)'
+            fill='#fff'></path></svg
+        >
+      </button>
     </div>
   </div>
 </section>

@@ -18,11 +18,14 @@
   display: flex;
   justify-content: center;
   font-size: fz(60, 100);
-  color: #76951929;
+  color: rgba(118, 149, 25, 0.16);
   font-family: var(--font-en--decor);
   font-weight: var(--fw-regular);
   letter-spacing: -0.01em;
   line-height: 1;
+  &._2 {
+    color: rgba(149, 95, 25, 0.16);
+  }
 }
 .c-feature-item-header__title {
   position: absolute;
@@ -32,4 +35,7 @@
   font-weight: var(--fw-semibold);
   letter-spacing: 0.1em;
   top: -2px;
+  .c-feature-item-header__title-wrapper._2 & {
+    color: #6a3c0a;
+  }
 }

@@ -35,7 +35,7 @@
   padding-block: 14px;
   font-size: fz(24, 30);
   letter-spacing: 0.19em;
-  line-height:1;
+  line-height: 1;
   @media (--md) {
     padding-block: 16px;
   }
@@ -72,6 +72,10 @@
 .p-reviews__item-inner {
   background-color: var(--color-white);
   border-radius: 0 0 12px 12px;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-template-columns: 1fr;
+  height: 100%;
 }
 .p-reviews__item-text {
   padding-block-start: 20px;

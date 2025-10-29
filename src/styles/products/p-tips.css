@@ -31,7 +31,7 @@
     padding-inline: 70px;
   }
   &._close {
-    max-height: 500px;
+    max-height: 480px;
     overflow-y: hidden;
     @media (--md) {
       max-height: 495px;

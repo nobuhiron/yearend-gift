@@ -11,7 +11,7 @@ const { index, title, description, imgBase } = Astro.props;
     <img src={`${imgBase}reasons_${index}.jpg`} alt='選ばれる理由' />
   </div>
   <div class='c-reason-card__description'>
-    <p class='c-reason-card__description-text'>{description}</p>
+    <p class='c-reason-card__description-text' set:html={description}></p>
     {
       index === '01' && (
         <a href='https://www.tea-and-coffee.shop/view/page/morihan' class='c-reason-card__link'>

@@ -1,7 +1,7 @@
 @import '../global/variables.css';
 
 .c-tips-item {
-  color: #1a1a1a;
+  color: color(var(--color-text));
   display: grid;
   @media (--md) {
     grid-template-rows: auto 1fr;
@@ -16,16 +16,16 @@
     height: 46px;
   }
   &._pink {
-    background-color: #f2b9bb;
+    background-color: var(--color-tips-header1);
   }
   &._orange {
-    background-color: #f2c5b5;
+    background-color: var(--color-tips-header2);
   }
   &._yellow {
-    background-color: #f7e19f;
+    background-color: var(--color-tips-header3);
   }
   &._green {
-    background-color: #c7e6b3;
+    background-color: var(--color-tips-header4);
   }
 }
 .c-tips-item__title--pc {
@@ -84,7 +84,7 @@
 .c-tips-item__content {
   padding-inline: 20px;
   padding-block: 18px 20px;
-  background-color: #f6f5f2;
+  background-color: var(--color-contents-bg);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   @media (--md) {

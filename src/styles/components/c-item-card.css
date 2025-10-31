@@ -36,7 +36,7 @@
   margin-block-start: 12px;
 }
 .c-item-card__price {
-  color: #563d0d;
+  color: var(--color-item-card-price);
   font-family: var(--font-jp--serif);
   font-weight: var(--fw-semibold);
   font-size: 24px;

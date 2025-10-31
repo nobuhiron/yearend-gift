@@ -83,7 +83,7 @@
   font-weight: var(--fw-regular);
   font-size: fz(16, 18);
   line-height: 1;
-  color: #c2584a;
+  color: var(--color-accent2);
   display: grid;
   justify-content: center;
 }

@@ -9,26 +9,42 @@
   --color-beige: #d4b987;
   --color-deep-beige: #8e6e33;
   --color-brown: #6a3c0a;
+  --color-dark-brown: #563d0d;
   --color-gold: #bf9c35;
   --color-red: #af2304;
-  --color-dim-red: #B93728;
+  --color-dim-red: #b93728;
+  --color-dim-red2: #c2584a;
   --color-pink: #e18e72;
   --color-purple: #bca8d2;
   --color-green: #75a046;
+  --color-deep-green: #4e530f;
   --color-gray: #797979;
+  --color-light-gray: #f6f5f2;
+  --color-pale-pink: #f2b9bb;
+  --color-pale-orange: #f2c5b5;
+  --color-pale-yellow: #f7e19f;
+  --color-pale-green: #c7e6b3;
 
   /* Semantic Colors */
   --color-text: var(--color-black);
   --color-bg: var(--color-light-beige);
   --color-main: var(--color-brown);
-  --color-petal: var(--color-pale-pink);
   --color-accent: var(--color-deep-pink);
+  --color-accent2: var(--color-dim-red2);
   --color-sub: var(--color-gold);
   --color-sub2: var(--color-green);
   --color-sub3: var(--color-pink);
   --color-sub4: var(--color-purple);
   --color-sub5: var(--color-dim-red);
   --color-sub6: var(--color-gray);
+  --color-qa-header: var(--color-beige);
+  --color-waffle-title: var(--color-deep-green);
+  --color-item-card-price: var(--color-dark-brown);
+  --color-tips-header1: var(--color-pale-pink);
+  --color-tips-header2: var(--color-pale-orange);
+  --color-tips-header3: var(--color-pale-yellow);
+  --color-tips-header4: var(--color-pale-green);
+  --color-contents-bg: var(--color-light-gray);
 }
 
 /* -------------------

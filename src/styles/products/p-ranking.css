@@ -120,7 +120,7 @@
 }
 
 .splide__arrow {
-  background: #bf9c35;
+  background: var(--color-sub);
   border-radius: 50%;
   width: 45px;
   height: 45px;

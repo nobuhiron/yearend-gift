@@ -4,7 +4,7 @@
 .c-faq-item__heading {
   display: flex;
   align-items: center;
-  background-color: #d4b987;
+  background-color: var(--color-qa-header);
   height: 70px;
   padding-inline: 12px 14px;
   cursor: pointer;
@@ -22,7 +22,7 @@
   font-family: var(--font-jp--serif);
   font-weight: var(--fw-semibold);
   font-size: fz(15, 16);
-  color: var(--color-main);
+  color: var(--color-item-card-price);
   flex: 1;
 }
 
@@ -64,7 +64,7 @@
     display: none;
     @media (--md) {
       display: block;
-      color: var(--color-sub3);
+      color: var(--color-accent2);
     }
   }
 }

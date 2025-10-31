@@ -29,13 +29,13 @@
 }
 .c-feature-item-header__title {
   position: absolute;
-  color: #4e530f;
+  color: var(--color-waffle-title);
   font-size: fz(26, 36);
   font-family: var(--font-jp--serif);
   font-weight: var(--fw-semibold);
   letter-spacing: 0.1em;
   top: -2px;
   .c-feature-item-header__title-wrapper._2 & {
-    color: #6a3c0a;
+    color: var(--color-main);
   }
 }

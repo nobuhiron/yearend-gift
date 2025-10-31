@@ -56,7 +56,7 @@
   }
 }
 .p-noshi__case {
-  background-color: #f6f5f2;
+  background-color: var(--color-contents-bg);
   padding: 16px 19px;
   display: flex;
   flex-direction: column;
@@ -81,7 +81,7 @@
 .p-noshi__case-title {
   font-family: var(--font-jp--sanserif);
   font-weight: var(--fw-semibold);
-  background-color: #c2584a;
+  background-color: var(--color-accent2);
   line-height: 1.92;
   font-size: fz(14, 16);
   border-radius: 100px;

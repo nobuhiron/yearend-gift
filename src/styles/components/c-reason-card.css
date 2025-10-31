@@ -7,7 +7,7 @@
   max-width: 1100px;
   background-color: #fcfaf6;
   overflow: hidden;
-  z-index: -2;
+  position: relative;
   @media (--md) {
     grid-template-columns: 590fr 510fr;
     grid-template-rows: auto 1fr;
@@ -24,7 +24,6 @@
     width: calc(193 / 335 * 100%);
     aspect-ratio: 193 / 143;
     background: url('../images/svg/ashirai_reason.svg') center center / cover;
-    z-index: -1;
     max-width: 271px;
   }
   &:nth-child(1) {

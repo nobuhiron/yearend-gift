@@ -2,57 +2,95 @@
 const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
 ---
 
-<div id='noshi' class='p-tips__noshi p-noshi' aria-labelledby='noshi-heading'>
-  <header class='p-noshi__header p-noshi-header'>
-    <div class='p-noshi-header__title-wrapper'>
+<section
+  id='noshi'
+  class='p-tips__noshi p-noshi'
+  aria-labelledby='noshi-title'
+>
+  <header class='p-noshi__header'>
+    <div class='p-noshi__title-wrapper'>
       <div class='p-noshi__title-img'>
-        <img src={`${imgBase}/svg/tips-noshi.svg`} alt='' loading='lazy' aria-hidden='true' />
+        <img
+          src={`${imgBase}svg/tips-noshi.svg`}
+          alt=''
+          loading='lazy'
+          decoding='async'
+        />
       </div>
-      <h3 id='noshi-heading' class='p-noshi-header__title'>のし紙の種類と書き方</h3>
+      <h3 id='noshi-title' class='p-noshi__title'>のし紙の種類と書き方</h3>
     </div>
-    <p class='p-noshi-header__description'>
-      お歳暮の贈り物に掛ける「のし紙」は、紅白の５本蝶結びの一般お祝い用のし紙である<br class='is_sm'
+    <p class='p-noshi__description'>
+      お歳暮の贈り物に掛ける「のし紙」は、紅白の５本蝶結びの一般お祝い用のし紙である<br
+        class='is_sm'
       /><span>「紅白無地蝶結び」</span>を使用します。<br />
       表書きは水引の上に「御歳暮」と書き、名入れは水引の下に贈り主の名前を書き入れます。
     </p>
-    <div class='p-noshi-header__img'>
-      <img src={`${imgBase}noshi-image_main.png`} alt='' loading='lazy' />
+    <div class='p-noshi__img'>
+      <img
+        src={`${imgBase}noshi-image_main.png`}
+        alt='のし紙の見本(紅白蝶結び)'
+        loading='lazy'
+        decoding='async'
+        width='760'
+        height='520'
+      />
     </div>
   </header>
   <ul class='p-noshi__cases'>
-    <li class='p-noshi__case p-noshi-case'>
-      <div class='p-noshi-case__heading'>
-        <h4 class='p-noshi-case__title'>個人名のみの場合</h4>
-        <p class='p-noshi-case__description'>
+    <li class='p-noshi__case'>
+      <div class='p-noshi__case-heading'>
+        <h4 class='p-noshi__case-title'>個人名のみの場合</h4>
+        <p class='p-noshi__case-description'>
           フルネームが一般的ですが、目下の人へ贈る場合は姓だけでもかまいません。
         </p>
       </div>
-      <div class='p-noshi-case__img'>
-        <img src={`${imgBase}noshi-image_personal.png`} alt='' loading='lazy' />
+      <div class='p-noshi__case-img'>
+        <img
+          src={`${imgBase}noshi-image_personal.png`}
+          alt='個人で贈る場合の熨斗の例'
+          loading='lazy'
+          decoding='async'
+          width='409'
+          height='306'
+        />
       </div>
     </li>
-    <li class='p-noshi__case p-noshi-case'>
-      <div class='p-noshi-case__heading'>
-        <h4 class='p-noshi-case__title'>連名で贈る場合</h4>
-        <p class='p-noshi-case__description'>
+    <li class='p-noshi__case'>
+      <div class='p-noshi__case-heading'>
+        <h4 class='p-noshi__case-title'>連名で贈る場合</h4>
+        <p class='p-noshi__case-description'>
           右側から左側へ、目上の方から順に書きます。
         </p>
       </div>
-      <div class='p-noshi-case__img'>
-        <img src={`${imgBase}noshi-image_joint.png`} alt='' loading='lazy' />
+      <div class='p-noshi__case-img'>
+        <img
+          src={`${imgBase}noshi-image_joint.png`}
+          alt='連名で贈る場合の熨斗の例'
+          loading='lazy'
+          decoding='async'
+          width='409'
+          height='306'
+        />
       </div>
     </li>
 
-    <li class='p-noshi__case p-noshi-case'>
-      <div class='p-noshi-case__heading'>
-        <h4 class='p-noshi-case__title'>会社名を入れる場合</h4>
-        <p class='p-noshi-case__description'>
+    <li class='p-noshi__case'>
+      <div class='p-noshi__case-heading'>
+        <h4 class='p-noshi__case-title'>会社名を入れる場合</h4>
+        <p class='p-noshi__case-description'>
           名前の右側に小さく書き添えます。
         </p>
       </div>
-      <div class='p-noshi-case__img'>
-        <img src={`${imgBase}noshi-image_company.png`} alt='' loading='lazy' />
+      <div class='p-noshi__case-img'>
+        <img
+          src={`${imgBase}noshi-image_company.png`}
+          alt='会社名を入れる場合の熨斗の例'
+          loading='lazy'
+          decoding='async'
+          width='412'
+          height='308'
+        />
       </div>
     </li>
   </ul>
-</div>
+</section>

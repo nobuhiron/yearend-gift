@@ -4,103 +4,115 @@ const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
 
 <section
   id='wrapping-section'
-  aria-labelledby='wrapping-heading'
+  aria-labelledby='wrapping-title'
   class='p-wrapping'
 >
   <div class='l-container'>
     <div class='l-inner'>
       <div class='p-wrapping__inner'>
-        <header
-          id='wrapping-heading'
-          class='p-wrapping__header p-wrapping-header'
-        >
-          <div class='p-wrapping-header__image-upper'>
+        <header class='p-wrapping__header'>
+          <div class='p-wrapping__header-image-upper' aria-hidden='true'>
             <img
               src={`${imgBase}/svg/noshi_upper.svg`}
               alt=''
               loading='lazy'
-              aria-hidden='true'
+              decoding='async'
             />
           </div>
-          <h2 class='p-wrapping-header__title'>
+          <h2 id='wrapping-title' class='p-wrapping__title'>
             オンラインショップの<br class='is_sm' />便利なサービス
           </h2>
-          <div class='p-wrapping-header__image-lower'>
+          <div class='p-wrapping__header-image-lower' aria-hidden='true'>
             <img
               src={`${imgBase}/svg/noshi_lower.svg`}
               alt=''
               loading='lazy'
-              aria-hidden='true'
+              decoding='async'
             />
           </div>
         </header>
         <div class='p-wrapping__cards'>
-          <div class='p-wrapping__card p-wrapping-card'>
-            <header class='p-wrapping-card__header'>
-              <div class='p-wrapping-card__icon'>
+          <div class='p-wrapping__card'>
+            <header class='p-wrapping__card-header'>
+              <div class='p-wrapping__card-icon'>
                 <img
                   src={`${imgBase}/svg/wrapping-free--pink.svg`}
                   alt='無料'
+                  loading='lazy'
+                  decoding='async'
                 />
               </div>
-              <h3 class='p-wrapping-card__title'>
-                <span class='p-wrapping-card__title--small'>安心・丁寧な</span> のし紙サービス
+              <h3 class='p-wrapping__card-title'>
+                <span class='p-wrapping__card-title--small'>安心・丁寧な</span> のし紙サービス
               </h3>
-              <p class='p-wrapping-card__description'>
+              <p class='p-wrapping__card-description'>
                 お客様のご要望に合わせて、ショッピングカート内で、さまざまなパターンをお選びいただけます。
               </p>
             </header>
-            <div class='p-wrapping-card__link-wrapper'>
+            <div class='p-wrapping__card-link-wrapper'>
               <a
                 href='https://www.tea-and-coffee.shop/view/page/gift#housou'
-                class='p-wrapping-card__link'
+                class='p-wrapping__card-link'
               >
                 ギフトラッピングについて
-                <span class='p-wrapping-card__link-arrow'></span>
+                <span class='p-wrapping__card-link-arrow'></span>
               </a>
               <a
                 href='https://www.tea-and-coffee.shop/view/page/gift#noshi'
-                class='p-wrapping-card__link _noshi'
+                class='p-wrapping__card-link _noshi'
               >
                 のしガイド
-                <span class='p-wrapping-card__link-arrow'></span>
+                <span class='p-wrapping__card-link-arrow'></span>
               </a>
             </div>
-            <div class='p-wrapping-card__image'>
+            <div class='p-wrapping__card-image'>
               <img
                 src={`${imgBase}wrapping-noshi.jpg`}
                 alt='熨斗をつけた包装の参考例'
+                loading='lazy'
+                decoding='async'
+                width='660'
+                height='452'
               />
             </div>
           </div>
-          <div class='p-wrapping__card p-wrapping-card'>
-            <header class='p-wrapping-card__header'>
-              <div class='p-wrapping-card__icon'>
+          <div class='p-wrapping__card'>
+            <header class='p-wrapping__card-header'>
+              <div class='p-wrapping__card-icon'>
                 <img
                   src={`${imgBase}/svg/wrapping-free--orange.svg`}
                   alt='無料'
+                  loading='lazy'
+                  decoding='async'
                 />
               </div>
-              <h3 class='p-wrapping-card__title'>
-                <span class='p-wrapping-card__title--small'
+              <h3 class='p-wrapping__card-title'>
+                <span class='p-wrapping__card-title--small'
                   >ご自宅送りで使える</span
                 > 手提げ袋サービス
               </h3>
-              <p class='p-wrapping-card__description'>
+              <p class='p-wrapping__card-description'>
                 お客様のご要望に合わせて、ショッピングカート内で、商品サイズにあわせた、手提げ袋を同封します。
               </p>
             </header>
-            <div class='p-wrapping-card__link-wrapper'>
+            <div class='p-wrapping__card-link-wrapper'>
               <a
                 href='https://www.tea-and-coffee.shop/view/page/gift#paperbag'
-                class='p-wrapping-card__link'
+                class='p-wrapping__card-link'
               >
                 お手提げ袋について
-                <span class='p-wrapping-card__link-arrow'></span>
+                <span class='p-wrapping__card-link-arrow'></span>
               </a>
             </div>
-            <div class='p-wrapping-card__image'>
-              <img src={`${imgBase}wrapping-bag.jpg`} alt='紙袋の参考例' />
+            <div class='p-wrapping__card-image'>
+              <img
+                src={`${imgBase}wrapping-bag.jpg`}
+                alt='紙袋の参考例'
+                loading='lazy'
+                decoding='async'
+                width='660'
+                height='410'
+              />
             </div>
           </div>
         </div>

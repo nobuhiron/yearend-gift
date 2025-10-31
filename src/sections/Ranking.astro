@@ -4,59 +4,63 @@ import { rankingItemData } from '../data/rankingItemData';
 const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
 ---
 
-<section
-  id='ranking-section'
-  class='p-ranking'
-  aria-labelledby='ranking-heading'
->
-  <header id='ranking-heading' class='p-ranking__heading'>
+<section id='ranking-section' class='p-ranking' aria-labelledby='ranking-title'>
+  <header class='p-ranking__heading'>
     <div class='p-ranking__deco-wrapper'>
-      <div class='p-raking__deco-1'>
+      <div class='p-ranking__deco-1'>
         <img
           src={`${imgBase}/svg/ranking-ashirai--1.svg`}
-          alt='お歳暮・冬ギフトランキング'
+          alt=''
+          loading='lazy'
+          decoding='async'
         />
       </div>
-      <div class='p-raking__deco-2'>
+      <div class='p-ranking__deco-2'>
         <img
           src={`${imgBase}/svg/ranking-ashirai--2.svg`}
-          alt='お歳暮・冬ギフトランキング'
+          alt=''
+          loading='lazy'
+          decoding='async'
+
         />
       </div>
-      <div class='p-raking__deco-3'>
+      <div class='p-ranking__deco-3'>
         <img
           src={`${imgBase}/svg/ranking-ashirai--3.svg`}
-          alt='お歳暮・冬ギフトランキング'
+          alt=''
+          loading='lazy'
+          decoding='async'
+
         />
       </div>
-      <div class='p-raking__deco-4'>
+      <div class='p-ranking__deco-4'>
         <img
           src={`${imgBase}/svg/ranking-ashirai--4.svg`}
-          alt='お歳暮・冬ギフトランキング'
+          alt=''
+          loading='lazy'
+          decoding='async'
+
         />
       </div>
-      <div class='p-raking__deco-5'>
+      <div class='p-ranking__deco-5'>
         <img
           src={`${imgBase}/svg/ranking-ashirai--5.svg`}
-          alt='お歳暮・冬ギフトランキング'
+          alt=''
+          loading='lazy'
+          decoding='async'
+
         />
       </div>
     </div>
     <div class='p-ranking__title-wrapper'>
-      <h2 id='ranking-title' class='visually-hidden'>
+      <h2 id='ranking-title' class='p-ranking__title visually-hidden'>
         お歳暮・冬ギフトランキング
       </h2>
       <div class='p-ranking__title-img--wrapper _1'>
-        <img
-          src={`${imgBase}/svg/ranking_title-1.svg`}
-          alt='お歳暮・冬ギフトランキング'
-        />
+        <img src={`${imgBase}/svg/ranking_title-1.svg`} alt='' loading='lazy' decoding='async' />
       </div>
       <div class='p-ranking__title-img--wrapper _2'>
-        <img
-          src={`${imgBase}/svg/ranking_title-2.svg`}
-          alt='お歳暮・冬ギフトランキング'
-        />
+        <img src={`${imgBase}/svg/ranking_title-2.svg`} alt='' loading='lazy' decoding='async' />
       </div>
     </div>
   </header>
@@ -80,7 +84,7 @@ const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
       </ul>
     </div>
     <div class='splide__arrows'>
-      <button class='splide__arrow splide__arrow--prev' aria-label='前へ'>
+      <button type='button' class='splide__arrow splide__arrow--prev' aria-label='前へ'>
         <svg
           xmlns='http://www.w3.org/2000/svg'
           width='200'
@@ -92,7 +96,7 @@ const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
             fill='#fff'></path></svg
         >
       </button>
-      <button class='splide__arrow splide__arrow--next' aria-label='次へ'>
+      <button type='button' class='splide__arrow splide__arrow--next' aria-label='次へ'>
         <svg
           xmlns='http://www.w3.org/2000/svg'
           width='200'
@@ -107,6 +111,8 @@ const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
     </div>
   </div>
   <div class='p-ranking__gold-line'>
-    <img src={`${imgBase}/svg/gold_line.svg`} alt='gold-line' />
+    <img src={`${imgBase}/svg/gold_line.svg`} alt='' loading='lazy'
+          decoding='async'
+ />
   </div>
 </section>

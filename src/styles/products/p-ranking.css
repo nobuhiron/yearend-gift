@@ -15,7 +15,7 @@
   @media (--md) {
     height: 70px;
   }
-  .p-raking__deco-1 {
+  .p-ranking__deco-1 {
     position: absolute;
     max-width: 56px;
     left: 13%;
@@ -26,13 +26,13 @@
       max-width: revert;
     }
   }
-  .p-raking__deco-2 {
+  .p-ranking__deco-2 {
     position: absolute;
     top: 0;
     right: 12%;
     max-width: 61px;
   }
-  .p-raking__deco-3 {
+  .p-ranking__deco-3 {
     position: absolute;
     bottom: -5%;
     left: -21%;
@@ -43,7 +43,7 @@
       max-width: revert;
     }
   }
-  .p-raking__deco-4 {
+  .p-ranking__deco-4 {
     position: absolute;
     bottom: -4%;
     right: -33%;
@@ -52,7 +52,7 @@
       right: 14%;
     }
   }
-  .p-raking__deco-5 {
+  .p-ranking__deco-5 {
     position: absolute;
     bottom: 13%;
     left: 50%;

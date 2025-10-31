@@ -3,21 +3,25 @@ const { index, title, description } = Astro.props;
 const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
 ---
 
-<div class={`c-points__item _${index}`}>
+<li class={`c-points__item _${index}`}>
   <div class='c-points__image'>
     <img
       src={`${imgBase}feature_item_points_${index}.png`}
-      alt='森半のお歳暮'
+      alt=''
+      loading='lazy'
+      decoding='async'
+      width='280'
+      height='280'
     />
   </div>
   <div class='c-points__text'>
     <div class='c-points__text-title-wrapper'>
       <div class='c-points__title-index'>
-        <span class='c-points__title-num--en'>Point</span>
+        <span class='c-points__title-num--en' aria-hidden='true'>Point</span>
         <span class='c-points__title-num'>{index}</span>
       </div>
-      <h4 class='c-points__text-title' set:html={title}></h4>
+      <h4 class='c-points__text-title' set:html={title} />
     </div>
     <p class='c-points__text-description'>{description}</p>
   </div>
-</div>
+</li>

@@ -19,3 +19,23 @@ scrollTopBtn?.addEventListener('click', (e) => {
     behavior: 'smooth',
   });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  const tipsInner = document.querySelector('#tips-inner');
+  const toggleButton = document.querySelector('.p-tips__toggle');
+  const toggleText = document.querySelector('.p-tips__toggle-text');
+  if (!tipsInner || !toggleButton || !toggleText) return;
+
+  const updateState = () => {
+    const isclosed = tipsInner.classList.contains('_close');
+    toggleButton.setAttribute('aria-expanded', String(!isclosed));
+    toggleButton.dataset.state = isclosed ? 'closed' : 'open';
+    toggleText.textContent = isclosed ? '開く' : '閉じる';
+  };
+
+  toggleButton.addEventListener('click', function () {
+    tipsInner.classList.toggle('_close');
+    updateState();
+  });
+  updateState();
+});

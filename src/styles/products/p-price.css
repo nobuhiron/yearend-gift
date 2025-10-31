@@ -6,20 +6,12 @@
   padding-block: 60px;
 }
 
-.p-price__heading {
-  font-family: var(--font-jp--serif);
-  font-weight: var(--fw-semibold);
-  text-align: center;
-  color: var(--color-white);
-}
-.p-price-heading__title {
-  font-size: fz(24, 36);
-  letter-spacing: 0.36em;
-}
-.p-price-heading__description {
+.p-price__description {
   font-size: fz(14, 16);
   letter-spacing: 0.08em;
   margin-block-start: 55px;
+  color: var(--color-white);
+  text-align: center;
   @media (--md) {
     margin-block-start: 62px;
     letter-spacing: 0.18em;
@@ -32,7 +24,7 @@
     margin-block-start: 50px;
   }
 }
-.p-price-nav__list {
+.p-price__nav-list {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(2, 1fr);
@@ -48,7 +40,7 @@
   }
 }
 
-.p-price-nav__item {
+.p-price__nav-item {
   background-color: var(--color-white);
   border-radius: 4px;
   transition: background-color 0.3s ease-in-out;
@@ -58,17 +50,17 @@
   }
   &:hover {
     background-color: var(--color-sub);
-    .p-price-nav__link-text {
+    .p-price__nav-link-text {
       color: var(--color-white);
     }
-    .p-price-nav__link-arrow {
+    .p-price__nav-link-arrow {
       background-color: var(--color-white);
       color: var(--color-sub);
     }
   }
 }
 
-.p-price-nav__link {
+.p-price__nav-link {
   display: grid;
   align-items: center;
   justify-content: center;
@@ -78,7 +70,7 @@
     grid-template-columns: 100fr 160fr;
     align-items: center;
     grid-template-rows: 1fr;
-    .p-price-nav__link-arrow {
+    .p-price__nav-link-arrow {
       position: absolute;
       bottom: auto;
       top: 50%;
@@ -100,7 +92,7 @@
   }
 }
 
-.p-price-nav__link-arrow {
+.p-price__nav-link-arrow {
   position: absolute;
   display: grid;
   place-items: center;
@@ -128,7 +120,7 @@
     transform: rotate(90deg);
   }
 }
-.p-price-nav__image {
+.p-price__nav-image {
   overflow: hidden;
   border-top-right-radius: 4px;
   border-top-left-radius: 4px;
@@ -142,7 +134,7 @@
     aspect-ratio: 100/87;
   }
 }
-.p-price-nav__link-text-wrapper {
+.p-price__nav-link-text-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -153,7 +145,7 @@
     justify-content: start;
   }
 }
-.p-price-nav__link-text {
+.p-price__nav-link-text {
   font-size: fz(18, 24);
   text-align: center;
   align-items: center;
@@ -163,7 +155,7 @@
     text-align: start;
   }
 }
-.p-price-nav__small {
+.p-price__nav-small {
   font-size: fz(14, 16);
   font-weight: var(--fw-semibold);
 }

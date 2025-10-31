@@ -1,12 +1,22 @@
 ---
 const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
 ---
-<section class="p-hero" role="banner" aria-label="メインビジュアル">
-    <h1 class="c-site-title visually-hidden">
-            森半のお歳暮
-    </h1>
-    <picture class="p-hero__img">
-        <source srcset={`${imgBase}FV_pc.jpg`} media="(min-width: 751px)">
-        <img src={`${imgBase}FV_sp.jpg`} alt="森半のお歳暮ギフトのメインビジュアル。高品質な和菓子と美しい包装が印象的な商品ラインナップ。早期割引キャンペーン実施中。">
-    </picture>
-</section>
+
+<header class='p-hero' role='banner' aria-labelledby='hero-heading'>
+  <h1 id='hero-heading' class='c-site-title visually-hidden'>森半のお歳暮</h1>
+  <picture class='p-hero__img'>
+    <source
+      srcset={`${imgBase}FV_pc.jpg`}
+      media='(min-width: 751px)'
+    />
+    <img
+      src={`${imgBase}FV_sp.jpg`}
+      alt='森半のお歳暮ギフトのメインビジュアル。'
+      loading='eager'
+      fetchpriority='high'
+      decoding='async'
+      width='750'
+      height='750'
+    />
+  </picture>
+</header>

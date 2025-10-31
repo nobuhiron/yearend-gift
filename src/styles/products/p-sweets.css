@@ -69,17 +69,17 @@
   gap: 62px;
 }
 
-.p-sweets__feature__img-wrapper {
+.p-sweets__feature-img-wrapper {
   @container (min-width: 920px) {
     position: relative;
   }
 }
 
-.p-sweets__feature__img {
+.p-sweets__feature-img {
   max-width: 835px;
   margin-inline: auto;
 }
-.p-sweets__feature__points-list {
+.p-sweets__feature-points-list {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;

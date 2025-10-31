@@ -5,12 +5,16 @@ const linkBase = import.meta.env.PUBLIC_LINK_BASE;
 ---
 
 <li class='c-item-card'>
-  <a
-    href={`${linkBase}${code}`}
-    class='c-item-card__inner'
-  >
+  <a href={`${linkBase}${code}`} class='c-item-card__inner'>
     <div class='c-item-card__image'>
-      <img src={`${imgBase}/${fileName}`} alt='価格で選ぶ' />
+      <img
+        src={`${imgBase}/${fileName}`}
+        alt={`${title}`}
+        loading='lazy'
+        decoding='async'
+        width='800'
+        height='800'
+      />
     </div>
     <div class='c-item-card__content'>
       <div class='c-item-card__text-wrapper'>
@@ -18,15 +22,17 @@ const linkBase = import.meta.env.PUBLIC_LINK_BASE;
         <p class='c-item-card__description'>{description}</p>
       </div>
       <div class='c-item-card__line'>
-        <img src={`${imgBase}/svg/line.svg`} alt='line' />
+        <img
+          src={`${imgBase}/svg/line.svg`}
+          alt=''
+          loading='lazy'
+          decoding='async'
+        />
       </div>
       <div class='c-item-card__price'>
         {price}<span class='c-item-card__price-amount'>(税込)</span>
       </div>
     </div>
   </a>
-  <a
-    href={`${linkBase}${code}`}
-    class='c-item-card__link'>詳しく見る</a
-  >
+  <a href={`${linkBase}${code}`} class='c-item-card__link'>詳しく見る</a>
 </li>

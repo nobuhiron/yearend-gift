@@ -40,7 +40,7 @@
     padding-block: 16px;
   }
 }
-.p-reviews__heading-ahirai {
+.p-reviews__heading-ashirai {
   position: absolute;
   top: -28px;
   left: 50%;
@@ -91,7 +91,7 @@
   padding-block-end: 20px;
   padding-inline: 16px;
 }
-.p-reviews__user-name-age {
+.p-reviews__user-age {
   font-size: fz(14, 16);
   color: #c5a872;
   font-weight: var(--fw-medium);

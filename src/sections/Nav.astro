@@ -5,16 +5,16 @@ import NavItem from '../components/NavItem.astro';
 
 <section class='p-nav'>
   <div class='l-container'>
-    <h2 id='nav-heading' class='p-nav__heading visually-hidden'>コンテンツ一覧</h2>
-    <nav class='p-nav__inner' aria-labelledby='nav-heading'>
+    <nav class='p-nav__inner' aria-labelledby='nav-title'>
+      <h2 id='nav-title' class='p-nav__title visually-hidden'>
+        コンテンツ一覧
+      </h2>
       <ul class='p-nav__list'>
-        {navItemData.map((item)=>
-            <NavItem
-              id={item.id}
-              index={item.index}
-              title={item.title}
-            />
-          )}
+        {
+          navItemData.map((item) => (
+            <NavItem id={item.id} index={item.index} title={item.title} />
+          ))
+        }
       </ul>
     </nav>
   </div>

@@ -18,7 +18,7 @@
   flex: 0 0 13px;
   padding-inline-end: 12px;
 }
-.c-faq-item__title {
+.c-faq-item__text {
   font-family: var(--font-jp--serif);
   font-weight: var(--fw-semibold);
   font-size: fz(15, 16);

@@ -11,7 +11,7 @@
   margin-inline: auto;
   max-width: 210px;
 }
-.p-noshi-header__title {
+.p-noshi__title {
   font-family: var(--font-jp--serif);
   font-weight: var(--fw-semibold);
   font-size: fz(24, 36);
@@ -20,7 +20,7 @@
   margin-block-start: 18px;
   line-height: 1;
 }
-.p-noshi-header__description {
+.p-noshi__description {
   font-weight: var(--fw-semibold);
   font-family: var(--font-jp--sanserif);
   font-size: fz(14, 16);
@@ -35,7 +35,7 @@
     text-decoration: underline;
   }
 }
-.p-noshi-header__img {
+.p-noshi__img {
   margin-block-start: 28px;
   max-width: 380px;
   margin-inline: auto;
@@ -55,7 +55,7 @@
     row-gap: 16px;
   }
 }
-.p-noshi-case {
+.p-noshi__case {
   background-color: #f6f5f2;
   padding: 16px 19px;
   display: flex;
@@ -69,7 +69,7 @@
     column-gap: min(130px, calc(130 / 836 * 100%));
   }
 }
-.p-noshi-case__heading {
+.p-noshi__case-heading {
   display: grid;
   grid-template-rows: repeat(2, auto);
   row-gap: 10px;
@@ -78,7 +78,7 @@
     flex: 1;
   }
 }
-.p-noshi-case__title {
+.p-noshi__case-title {
   font-family: var(--font-jp--sanserif);
   font-weight: var(--fw-semibold);
   background-color: #c2584a;
@@ -89,12 +89,12 @@
   text-align: center;
   letter-spacing: 0.04em;
 }
-.p-noshi-case__description {
+.p-noshi__case-description {
   font-family: var(--font-jp--sanserif);
   font-weight: var(--fw-medium);
   font-size: fz(14, 16);
 }
 
-.p-noshi-case__img {
+.p-noshi__case-img {
   max-width: 205px;
 }

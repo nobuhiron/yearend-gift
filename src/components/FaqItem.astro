@@ -1,20 +1,20 @@
 ---
-const { title, description, index } = Astro.props;
+const { question, answer, index } = Astro.props;
 const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
 ---
 
 <details open={index === 1} class='c-faq-item'>
   <summary class='c-faq-item__heading'>
-    <span class='c-faq-item__number'>Q</span>
-    <h3 class='c-faq-item__title'>{title}</h3>
-    <span class='c-faq-item__button'>
-      <img src={`${imgBase}/svg/Vector.svg`} alt='faq-arrow' />
+    <span class='c-faq-item__number' aria-hidden='true'>Q</span>
+    <span class='c-faq-item__text'>{question}</span>
+    <span class='c-faq-item__button' aria-hidden='true'>
+      <img src={`${imgBase}/svg/Vector.svg`} alt='' loading='lazy' decoding='async' width='13' height='8' />
     </span>
   </summary>
   <div class='c-faq-item__panel'>
     <div class='c-faq-item__panel-inner'>
-      <span class='c-faq-item__number'>A</span>
-      <p class='c-faq-item__description' set:html={description}></p>
+      <span class='c-faq-item__number' aria-hidden='true'>A</span>
+      <p class='c-faq-item__description' set:html={answer} />
     </div>
   </div>
 </details>

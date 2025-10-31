@@ -16,7 +16,7 @@
   container-type: inline-size;
 }
 
-.p-wrapping-header {
+.p-wrapping__header {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, auto);
@@ -26,7 +26,7 @@
     max-width: 596px;
   }
 }
-.p-wrapping-header__title {
+.p-wrapping__title {
   font-family: var(--font-jp--serif);
   font-weight: var(--fw-semibold);
   font-size: fz(24, 32);
@@ -35,7 +35,7 @@
   line-height: 1.3333;
   letter-spacing: 0.08em;
 }
-.p-wrapping-header__image-lower {
+.p-wrapping__header-image-lower {
   padding-block-start: 18px;
   @media (--md) {
     padding-block-start: 13px;
@@ -53,7 +53,7 @@
     margin-block-start: 36px;
   }
 }
-.p-wrapping-card {
+.p-wrapping__card {
   display: grid;
   grid-template-columns: 1fr;
   @container (min-width: 620px) {
@@ -61,7 +61,7 @@
     grid-template-rows: repeat(2, auto);
   }
 }
-.p-wrapping-card__header {
+.p-wrapping__card-header {
   display: grid;
   grid-template-columns: 53fr 174fr;
   grid-template-rows: repeat(2, auto);
@@ -75,25 +75,25 @@
     column-gap: 14px;
   }
 }
-.p-wrapping-card__title {
+.p-wrapping__card-title {
   font-family: var(--font-jp--sanserif);
   font-weight: var(--fw-medium);
   font-size: 24px;
   line-height: 1.16;
   letter-spacing: 0.04em;
 }
-.p-wrapping-card__title--small {
+.p-wrapping__card-title--small {
   display: block;
   font-size: 18px;
   line-height: 1.5555;
 }
-.p-wrapping-card__description {
+.p-wrapping__card-description {
   grid-column: 1/3;
   font-family: var(--font-jp--sanserif);
   letter-spacing: 0.04em;
   font-size: fz(14, 16);
 }
-.p-wrapping-card__image {
+.p-wrapping__card-image {
   grid-column: 1/3;
   grid-row: 2/3;
   margin-block-start: 12px;
@@ -103,7 +103,7 @@
     align-self: center;
   }
 }
-.p-wrapping-card__link-wrapper {
+.p-wrapping__card-link-wrapper {
   display: flex;
   flex-direction: column;
   row-gap: 5px;
@@ -117,7 +117,7 @@
     margin-block-start: 18px;
   }
 }
-.p-wrapping-card__link {
+.p-wrapping__card-link {
   font-family: var(--font-jp--sanserif);
   font-weight: var(--fw-semibold);
   background-color: var(--color-sub3);
@@ -133,12 +133,12 @@
     background-color: var(--color-sub4);
   }
   &:hover {
-    .p-wrapping-card__link-arrow {
+    .p-wrapping__card-link-arrow {
       transform: translate(4px, -50%);
     }
   }
 }
-.p-wrapping-card__link-arrow {
+.p-wrapping__card-link-arrow {
   color: currentColor;
   background-color: var(--color-white);
   height: 18px;
@@ -164,7 +164,7 @@ mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewB
     width: 100%;
     height: 100%;
   }
-  .p-wrapping-card__link._noshi & {
+  .p-wrapping__card-link._noshi & {
     &:before {
       background-color: var(--color-sub4);
     }

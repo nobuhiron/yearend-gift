@@ -76,4 +76,5 @@
 .l-footer__logo {
   max-width: 160px;
   margin-inline: auto;
+  display: block;
 }

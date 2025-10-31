@@ -26,7 +26,7 @@
   }
 }
 
-.c-nav-link__image {
+.c-nav__link-image {
   aspect-ratio: 80/87;
   @container (min-width: 400px) {
     aspect-ratio: 108/70;
@@ -36,7 +36,7 @@
   }
 }
 
-.c-nav-link__text {
+.c-nav__link-text {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -49,12 +49,12 @@
   }
 }
 
-.c-nav-link__title {
+.c-nav__link-title {
   font-family: var(--font-jp--serif);
   font-weight: var(--fw-semibold);
   font-size: fz(15, 16);
 }
-.c-nav-link__arrow {
+.c-nav__link-arrow {
   color: var(--color-white);
   background-color: var(--color-sub);
   height: 24px;

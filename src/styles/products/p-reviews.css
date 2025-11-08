@@ -97,3 +97,11 @@
   font-weight: var(--fw-medium);
   font-family: var(--font-jp--serif);
 }
+
+.p-reviews__user-image {
+  max-width: 60px;
+  aspect-ratio: 1/1;
+  @media (--md) {
+    max-width: 80px;
+  }
+}

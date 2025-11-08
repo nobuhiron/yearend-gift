@@ -1,6 +1,6 @@
 export const priceItemData2000less = [
   {
-    fileName: 'items/item-2000-1.jpg',
+    fileName: 'item-2000-1.jpg',
     code: '000000000184',
     title: '森半 抹茶スイーツお試しセット',
     description:
@@ -8,7 +8,7 @@ export const priceItemData2000less = [
     price: '1,980',
   },
   {
-    fileName: 'items/item-2000-2.jpg',
+    fileName: 'item-2000-2.jpg',
     code: '000000000168',
     title: '商森半 薄焼きロールクレープ 抹茶くるる [20本入り]',
     description:
@@ -16,7 +16,7 @@ export const priceItemData2000less = [
     price: '1,663',
   },
   {
-    fileName: 'items/item-2000-3.jpg',
+    fileName: 'item-2000-3.jpg',
     code: '000000000181',
     title: '森半 抹茶フィナンシェ詰合せ [8個入り]',
     description:
@@ -26,7 +26,7 @@ export const priceItemData2000less = [
 ];
 export const priceItemData4000less = [
   {
-    fileName: 'items/item-4000-1.jpg',
+    fileName: 'item-4000-1.jpg',
     code: '000000000678',
     title:
       'MINTON(ミントン)<ティーバッグ>和紅茶 4箱ギフトセット (京・苺・白桃・白葡萄)',
@@ -35,7 +35,7 @@ export const priceItemData4000less = [
     price: '2,160',
   },
   {
-    fileName: 'items/item-4000-2.jpg',
+    fileName: 'item-4000-2.jpg',
     code: '000000000099',
     title: '森半 <五香(ごこう)>煎茶・抹茶ヴァッフェル詰合せ',
     description:
@@ -43,7 +43,7 @@ export const priceItemData4000less = [
     price: '2,845',
   },
   {
-    fileName: 'items/item-4000-3.jpg',
+    fileName: 'item-4000-3.jpg',
     code: '000000000770',
     title:
       'KFK (カフカ)<ドリップコーヒー>ロマンスコーヒーセレクション ギフトセット [ガラパゴス/エチオピア 各10g×5P入り]',
@@ -54,7 +54,7 @@ export const priceItemData4000less = [
 ];
 export const priceItemData6000less = [
   {
-    fileName: 'items/item-6000-1.jpg',
+    fileName: 'item-6000-1.jpg',
     code: '000000000307',
     title: '森半 お茶屋のスイーツ満足セット',
     description:
@@ -62,7 +62,7 @@ export const priceItemData6000less = [
     price: '5,100',
   },
   {
-    fileName: 'items/item-6000-2.jpg',
+    fileName: 'item-6000-2.jpg',
     code: '000000000101',
     title: '宇治茶詰め合わせ（玉露 国の誉 120g缶、初摘煎茶 120g缶）',
     description:
@@ -70,7 +70,7 @@ export const priceItemData6000less = [
     price: '5,722',
   },
   {
-    fileName: 'items/item-6000-3.jpg',
+    fileName: 'item-6000-3.jpg',
     code: '000000000373',
     title:
       'KFK(カフカ) <ドリップバッグ> コーヒーギフトボックス 40PG 七宝つなぎ [40個入り]',
@@ -79,9 +79,9 @@ export const priceItemData6000less = [
     price: '4,104',
   },
 ];
-export const priceItemData600over = [
+export const priceItemData6001over = [
   {
-    fileName: 'items/item-over-1.jpg',
+    fileName: 'item-6001-1.jpg',
     code: '000000000100',
     title:
       '森半 宇治茶詰め合わせ[玉露/国の誉 120g缶、初摘煎茶 120g缶、雁が音/鷹が峰 100g缶]',
@@ -90,7 +90,7 @@ export const priceItemData600over = [
     price: '7,731',
   },
   {
-    fileName: 'items/item-over-2.jpg',
+    fileName: 'item-6001-2.jpg',
     code: '000000000401',
     title: '森半 <宇治> 名品銘茶詰め合わせ(国松-100R)',
     description:
@@ -98,7 +98,7 @@ export const priceItemData600over = [
     price: '10,800',
   },
   {
-    fileName: 'items/item-over-3.jpg',
+    fileName: 'item-6001-3.jpg',
     code: '000000000061',
     title: '森半 【受注生産】 京の現代名工・吉田利一作 宇治玉露 [100g缶]',
     description:

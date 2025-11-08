@@ -1,22 +1,190 @@
 ---
-const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
+import { getImage } from 'astro:assets';
+import fvPc from '/src/assets/images/FV_pc.jpg';
+import fvSp from '/src/assets/images/FV_sp.jpg';
+
+// PC用の画像を生成（各フォーマットとサイズ）
+const pcWebp1200 = await getImage({
+  src: fvPc,
+  width: 1200,
+  format: 'webp',
+  quality: 85,
+});
+const pcWebp1600 = await getImage({
+  src: fvPc,
+  width: 1600,
+  format: 'webp',
+  quality: 85,
+});
+const pcWebp1920 = await getImage({
+  src: fvPc,
+  width: 1920,
+  format: 'webp',
+  quality: 85,
+});
+const pcAvif1200 = await getImage({
+  src: fvPc,
+  width: 1200,
+  format: 'avif',
+  quality: 85,
+});
+const pcAvif1600 = await getImage({
+  src: fvPc,
+  width: 1600,
+  format: 'avif',
+  quality: 85,
+});
+const pcAvif1920 = await getImage({
+  src: fvPc,
+  width: 1920,
+  format: 'avif',
+  quality: 85,
+});
+const pcJpeg1200 = await getImage({
+  src: fvPc,
+  width: 1200,
+  format: 'jpeg',
+  quality: 85,
+});
+const pcJpeg1600 = await getImage({
+  src: fvPc,
+  width: 1600,
+  format: 'jpeg',
+  quality: 85,
+});
+const pcJpeg1920 = await getImage({
+  src: fvPc,
+  width: 1920,
+  format: 'jpeg',
+  quality: 85,
+});
+
+// SP用の画像を生成（各フォーマットとサイズ）
+const spWebp480 = await getImage({
+  src: fvSp,
+  width: 480,
+  format: 'webp',
+  quality: 85,
+});
+const spWebp750 = await getImage({
+  src: fvSp,
+  width: 750,
+  format: 'webp',
+  quality: 85,
+});
+const spWebp1080 = await getImage({
+  src: fvSp,
+  width: 1080,
+  format: 'webp',
+  quality: 85,
+});
+const spAvif480 = await getImage({
+  src: fvSp,
+  width: 480,
+  format: 'avif',
+  quality: 85,
+});
+const spAvif750 = await getImage({
+  src: fvSp,
+  width: 750,
+  format: 'avif',
+  quality: 85,
+});
+const spAvif1080 = await getImage({
+  src: fvSp,
+  width: 1080,
+  format: 'avif',
+  quality: 85,
+});
+const spJpeg480 = await getImage({
+  src: fvSp,
+  width: 480,
+  format: 'jpeg',
+  quality: 85,
+});
+const spJpeg750 = await getImage({
+  src: fvSp,
+  width: 750,
+  format: 'jpeg',
+  quality: 85,
+});
+const spJpeg1080 = await getImage({
+  src: fvSp,
+  width: 1080,
+  format: 'jpeg',
+  quality: 85,
+});
+
+// srcset文字列を生成
+const pcWebpSrcset = `${pcWebp1200.src} 1200w, ${pcWebp1600.src} 1600w, ${pcWebp1920.src} 1920w`;
+const pcAvifSrcset = `${pcAvif1200.src} 1200w, ${pcAvif1600.src} 1600w, ${pcAvif1920.src} 1920w`;
+const pcJpegSrcset = `${pcJpeg1200.src} 1200w, ${pcJpeg1600.src} 1600w, ${pcJpeg1920.src} 1920w`;
+
+const spWebpSrcset = `${spWebp480.src} 480w, ${spWebp750.src} 750w, ${spWebp1080.src} 1080w`;
+const spAvifSrcset = `${spAvif480.src} 480w, ${spAvif750.src} 750w, ${spAvif1080.src} 1080w`;
+const spJpegSrcset = `${spJpeg480.src} 480w, ${spJpeg750.src} 750w, ${spJpeg1080.src} 1080w`;
 ---
 
 <header class='p-hero' role='banner' aria-labelledby='hero-heading'>
   <h1 id='hero-heading' class='c-site-title visually-hidden'>森半のお歳暮</h1>
+
   <picture class='p-hero__img'>
+    {/* PC用の画像ソース（751px以上） - WebP優先 */}
     <source
-      srcset={`${imgBase}FV_pc.jpg`}
       media='(min-width: 751px)'
+      type='image/webp'
+      srcset={pcWebpSrcset}
+      sizes='(min-width: 751px) 100vw'
     />
+    {/* PC用の画像ソース（751px以上） - AVIF */}
+    <source
+      media='(min-width: 751px)'
+      type='image/avif'
+      srcset={pcAvifSrcset}
+      sizes='(min-width: 751px) 100vw'
+    />
+    {/* PC用の画像ソース（751px以上） - JPEGフォールバック */}
+    <source
+      media='(min-width: 751px)'
+      type='image/jpeg'
+      srcset={pcJpegSrcset}
+      sizes='(min-width: 751px) 100vw'
+    />
+
+    {/* SP用の画像ソース（750px以下） - WebP優先 */}
+    <source
+      media='(max-width: 750px)'
+      type='image/webp'
+      srcset={spWebpSrcset}
+      sizes='100vw'
+    />
+    {/* SP用の画像ソース（750px以下） - AVIF */}
+    <source
+      media='(max-width: 750px)'
+      type='image/avif'
+      srcset={spAvifSrcset}
+      sizes='100vw'
+    />
+    {/* SP用の画像ソース（750px以下） - JPEGフォールバック */}
+    <source
+      media='(max-width: 750px)'
+      type='image/jpeg'
+      srcset={spJpegSrcset}
+      sizes='100vw'
+    />
+
+    {/* フォールバック画像（SPを既定値として使用） */}
     <img
-      src={`${imgBase}FV_sp.jpg`}
+      src={spJpeg750.src}
+      srcset={spJpegSrcset}
+      width={750}
+      height={fvSp.height
+        ? Math.round((fvSp.height / fvSp.width) * 750)
+        : undefined}
       alt='森半のお歳暮ギフトのメインビジュアル。'
       loading='eager'
       fetchpriority='high'
       decoding='async'
-      width='750'
-      height='750'
     />
   </picture>
 </header>

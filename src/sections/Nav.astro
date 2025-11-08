@@ -1,8 +1,13 @@
 ---
 import { navItemData } from '../data/navItemData';
 import NavItem from '../components/NavItem.astro';
+const images = import.meta.glob('/src/assets/images/nav_*.jpg', { eager: true,import: 'default'}) as Record<string, ImageMetadata>;
+const getNavImage = (index: string) =>{
+  const pad =String(index).padStart(2, '0');
+  const key =`/src/assets/images/nav_${pad}.jpg`;
+  return images[key] || null;
+}
 ---
-
 <section class='p-nav'>
   <div class='l-container'>
     <nav class='p-nav__inner' aria-labelledby='nav-title'>
@@ -12,7 +17,7 @@ import NavItem from '../components/NavItem.astro';
       <ul class='p-nav__list'>
         {
           navItemData.map((item) => (
-            <NavItem id={item.id} index={item.index} title={item.title} />
+            <NavItem id={item.id} index={item.index} title={item.title} image={getNavImage(item.index)}/>
           ))
         }
       </ul>

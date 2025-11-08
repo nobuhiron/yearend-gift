@@ -1,5 +1,9 @@
 ---
+import {Image} from 'astro:assets';
 const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
+const userImage1 =import('/src/assets/images/illust_01.png');
+const userImage2 =import('/src/assets/images/illust_02.png');
+const userImage3 =import('/src/assets/images/illust_03.png');
 ---
 
 <div class='p-reviews'>
@@ -25,13 +29,14 @@ const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
             <div class='p-reviews__user'>
               <div class='p-reviews__user-age'>50代女性</div>
               <div class='p-reviews__user-image' aria-hidden='true'>
-                <img
-                  src={`${imgBase}/svg/illust_01.svg`}
+                <Image
+                  src={userImage1}
                   alt=''
-                  width='60'
-                  height='60'
+                  width='80'
+                  height='80'
                   loading='lazy'
                   decoding='async'
+                  widths={[80,120,160]}
                 />
               </div>
             </div>
@@ -44,17 +49,18 @@ const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
               贈り物にも良さそう。
             </p>
             <div class='p-reviews__user'>
-              <div class='p-reviews__user-name-age' aria-hidden='true'>
+              <div class='p-reviews__user-age' aria-hidden='true'>
                 50代女性
               </div>
               <div class='p-reviews__user-image'>
-                <img
-                  src={`${imgBase}/svg/illust_01.svg`}
+                <Image
+                  src={userImage2}
                   alt=''
-                  width='60'
-                  height='60'
+                  width='80'
+                  height='80'
                   loading='lazy'
                   decoding='async'
+                  widths={[80,120,160]}
                 />
               </div>
             </div>
@@ -69,15 +75,16 @@ const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
               美味しかったので妹にも食べて欲しくなり送りました！
             </p>
             <div class='p-reviews__user'>
-              <div class='p-reviews__user-name-age'>40代女性</div>
-              <div class='p-reviews__user-image aria-hidden=' true''>
-                <img
-                  src={`${imgBase}/svg/illust_01.svg`}
+              <div class='p-reviews__user-age'>40代男性</div>
+              <div class='p-reviews__user-image' aria-hidden='true'>
+                <Image
+                  src={userImage3}
                   alt=''
-                  width='60'
-                  height='60'
+                  width='80'
+                  height='80'
                   loading='lazy'
                   decoding='async'
+                  widths={[80,120,160]}
                 />
               </div>
             </div>

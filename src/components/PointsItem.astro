@@ -1,17 +1,19 @@
 ---
-const { index, title, description } = Astro.props;
+import { Image } from 'astro:assets';
+const { index, title, description, image } = Astro.props;
 const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
 ---
 
 <li class={`c-points__item _${index}`}>
   <div class='c-points__image'>
-    <img
-      src={`${imgBase}feature_item_points_${index}.png`}
+    <Image
+      src={image}
       alt=''
       loading='lazy'
       decoding='async'
       width='280'
       height='280'
+      widths={[280,420,560]}
     />
   </div>
   <div class='c-points__text'>

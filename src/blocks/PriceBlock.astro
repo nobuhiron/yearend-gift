@@ -1,19 +1,30 @@
 ---
 import ItemCard from '../components/ItemCard.astro';
 import PriceTitle from '../components/PriceTitle.astro';
+import { priceBlockData } from '../data/priceBlockData';
 import {
   priceItemData2000less,
   priceItemData4000less,
   priceItemData6000less,
-  priceItemData600over,
+  priceItemData6001over,
 } from '../data/priceItemData';
 const itemSets = [
   priceItemData2000less,
   priceItemData4000less,
   priceItemData6000less,
-  priceItemData600over,
+  priceItemData6001over,
 ];
-import { priceBlockData } from '../data/priceBlockData';
+
+const allItemImages = import.meta.glob(`/src/assets/images/item-*.jpg`, {
+  eager: true,
+  import: 'default',
+}) as Record<string, ImageMetadata>;
+const getImageByFileName = (fileName: string) => {
+  const key = Object.keys(allItemImages).find((key) =>
+    key.endsWith('/' + fileName)
+  );
+  return key ? allItemImages[key] : null;
+};
 ---
 
 {
@@ -27,9 +38,9 @@ import { priceBlockData } from '../data/priceBlockData';
       />
       <div class='p-cards'>
         <ul class={`p-cards__list p-price-block__list _${block.index}`}>
-          {itemSets[block.index].map((item) => (
+          {itemSets[block.index].map((item, i) => (
             <ItemCard
-              fileName={item.fileName}
+              image={getImageByFileName(item.fileName)}
               code={item.code}
               title={item.title}
               description={item.description}

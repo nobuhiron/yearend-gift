@@ -1,17 +1,23 @@
 ---
-const { id, index, title } = Astro.props;
-const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
+const { id, title, image } = Astro.props;
+import { Image } from 'astro:assets';
 ---
 
-        <li class='c-nav__item'>
-          <a href={`#${id}`} class='c-nav__link'>
-            <div class='c-nav__link-image'>
-              <img src={`${imgBase}nav_${index}.jpg`} alt='' loading='lazy' decoding='async' width='103' height='112' />
-            </div>
-            <div class='c-nav__link-text'>
-              <h3 class='c-nav__link-title' set:html={title}></h3>
-              <span class='c-nav__link-arrow' aria-hidden='true'>
-              </span>
-            </div>
-          </a>
-        </li>
+<li class='c-nav__item'>
+  <a href={`#${id}`} class='c-nav__link'>
+    <div class='c-nav__link-image'>
+      <Image
+        src={image}
+        alt=''
+        format={'webp'}
+        widths={[80, 108, 160, 216]}
+        sizes='108px'
+        decoding='async'
+      />
+    </div>
+    <div class='c-nav__link-text'>
+      <h3 class='c-nav__link-title' set:html={title} />
+      <span class='c-nav__link-arrow' aria-hidden='true'> </span>
+    </div>
+  </a>
+</li>

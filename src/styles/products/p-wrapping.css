@@ -97,10 +97,12 @@
   grid-column: 1/3;
   grid-row: 2/3;
   margin-block-start: 12px;
+  aspect-ratio: 294/156;
   @container (min-width: 620px) {
     grid-column: 3/4;
     grid-row: 1/3;
     align-self: center;
+    aspect-ratio: 330/226;
   }
 }
 .p-wrapping__card-link-wrapper {

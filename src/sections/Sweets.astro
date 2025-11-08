@@ -5,6 +5,16 @@ import SweetsFeature from '../blocks/SweetsFeature.astro';
 import { sweetsAssortmensItemData } from '../data/sweetsAssortmensItemData';
 import { sweetsOtherItemData } from '../data/sweetsOtherItemData';
 import SectionTitle from '../components/SectionTitle.astro';
+const allItemImages = import.meta.glob(`/src/assets/images/item-*.jpg`, {
+  eager: true,
+  import: 'default',
+}) as Record<string, ImageMetadata>;
+const getImageByFileName = (fileName: string) => {
+  const key = Object.keys(allItemImages).find((key) =>
+    key.endsWith('/' + fileName)
+  );
+  return key ? allItemImages[key] : null;
+};
 const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
 ---
 
@@ -22,7 +32,7 @@ const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
           {
             sweetsAssortmensItemData.map((item) => (
               <ItemCard
-                fileName={item.fileName}
+                image={getImageByFileName(item.fileName)}
                 code={item.code}
                 title={item.title}
                 description={item.description}
@@ -42,7 +52,7 @@ const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
         {
           sweetsOtherItemData.map((item) => (
             <ItemCard
-              fileName={item.fileName}
+              image={getImageByFileName(item.fileName)}
               code={item.code}
               title={item.title}
               description={item.description}

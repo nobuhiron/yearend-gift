@@ -1,7 +1,11 @@
 ---
+import { Image } from 'astro:assets';
 import PriceBlock from '../blocks/PriceBlock.astro';
 import SectionTitle from '../components/SectionTitle.astro';
-const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
+const priceNav1Image =import('/src/assets/images/price-nav_01.jpg');
+const priceNav2Image =import('/src/assets/images/price-nav_02.jpg');
+const priceNav3Image =import('/src/assets/images/price-nav_03.jpg');
+const priceNav4Image =import('/src/assets/images/price-nav_04.jpg');
 ---
 
 <section id='price-section' class='p-price' aria-labelledby='price-title'>
@@ -19,13 +23,12 @@ const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
           <li class='p-price__nav-item'>
             <a href='#price-block-0' class='p-price__nav-link'>
               <div class='p-price__nav-image'>
-                <img
-                  src={`${imgBase}price-nav_01.jpg`}
+                <Image
+                  src={priceNav1Image}
                   alt=''
                   loading='lazy'
                   decoding='async'
-                  width='800'
-                  height='800'
+                  widths={[160,240,320]}
                 />
               </div>
               <div class='p-price__nav-link-text-wrapper'>
@@ -41,13 +44,12 @@ const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
           <li class='p-price__nav-item'>
             <a href='#price-block-1' class='p-price__nav-link'>
               <div class='p-price__nav-image'>
-                <img
-                  src={`${imgBase}price-nav_02.jpg`}
+                <Image
+                  src={priceNav2Image}
                   alt=''
                   loading='lazy'
                   decoding='async'
-                  width='800'
-                  height='800'
+                  widths={[160,240,320]}
                 />
               </div>
               <div class='p-price__nav-link-text-wrapper'>
@@ -63,13 +65,12 @@ const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
           <li class='p-price__nav-item'>
             <a href='#price-block-2' class='p-price__nav-link'>
               <div class='p-price__nav-image'>
-                <img
-                  src={`${imgBase}price-nav_03.jpg`}
+                <Image
+                  src={priceNav3Image}
                   alt=''
                   loading='lazy'
                   decoding='async'
-                  width='800'
-                  height='800'
+                  widths={[160,240,320]}
                 />
               </div>
               <div class='p-price__nav-link-text-wrapper'>
@@ -85,13 +86,12 @@ const imgBase = import.meta.env.PUBLIC_IMAGE_BASE;
           <li class='p-price__nav-item'>
             <a href='#price-block-3' class='p-price__nav-link'>
               <div class='p-price__nav-image'>
-                <img
-                  src={`${imgBase}price-nav_04.jpg`}
+                <Image
+                  src={priceNav4Image}
                   alt=''
                   loading='lazy'
                   decoding='async'
-                  width='800'
-                  height='800'
+                  widths={[160,240,320]}
                 />
               </div>
               <div class='p-price__nav-link-text-wrapper'>

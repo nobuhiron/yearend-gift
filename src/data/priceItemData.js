@@ -9,11 +9,11 @@ export const priceItemData2000less = [
   },
   {
     fileName: 'item-2000-2.jpg',
-    code: '000000000168',
-    title: '商森半 薄焼きロールクレープ 抹茶くるる [20本入り]',
+    code: '000000000177',
+    title: '商森半 薄焼きロールクレープ 抹茶くるる [10本入り]',
     description:
       '薄焼きクレープを丸めて生地にし、内側に抹茶チョコレートを流し込みました。',
-    price: '1,663',
+    price: '1,026',
   },
   {
     fileName: 'item-2000-3.jpg',
@@ -21,7 +21,7 @@ export const priceItemData2000less = [
     title: '森半 抹茶フィナンシェ詰合せ [8個入り]',
     description:
       'しっとりとした口当たりで、バター・アーモンドと宇治抹茶のまろやかな風味が特徴です。',
-    price: '1,663',
+    price: '1,555',
   },
 ];
 export const priceItemData4000less = [

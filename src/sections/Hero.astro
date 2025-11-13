@@ -1,7 +1,7 @@
 ---
 import { getImage } from 'astro:assets';
-import fvPc from '/src/assets/images/FV_pc.jpg';
-import fvSp from '/src/assets/images/FV_sp.jpg';
+import fvPc from '/src/assets/images/fv-pc_seibo_1700-715.jpg';
+import fvSp from '/src/assets/images/fv-sp_seibo_750-750.jpg';
 
 // PC用の画像を生成（各フォーマットとサイズ）
 const pcWebp1200 = await getImage({
@@ -125,7 +125,7 @@ const spAvifSrcset = `${spAvif480.src} 480w, ${spAvif750.src} 750w, ${spAvif1080
 const spJpegSrcset = `${spJpeg480.src} 480w, ${spJpeg750.src} 750w, ${spJpeg1080.src} 1080w`;
 ---
 
-<header class='p-hero' role='banner' aria-labelledby='hero-heading'>
+<header class='p-hero' aria-labelledby='hero-heading'>
   <h1 id='hero-heading' class='c-site-title visually-hidden'>森半のお歳暮</h1>
 
   <picture class='p-hero__img'>

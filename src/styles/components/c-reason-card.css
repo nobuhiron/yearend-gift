@@ -36,11 +36,11 @@
   }
 }
 .c-reason-card__heading {
+  z-index: 1;
   @media (--md) {
     grid-column: 1/2;
     grid-row: 1/2;
     padding-block-start: 40px;
-    z-index: 1;
   }
 }
 .c-reason-card__title {
@@ -56,6 +56,7 @@
   border-radius: 8px;
   overflow: hidden;
   margin-block-start: 10px;
+  z-index: 1;
   @media (--md) {
     grid-column: 2/3;
     grid-row: 1/3;
@@ -63,6 +64,16 @@
     border-radius: 0;
     img {
       height: 100%;
+    }
+  }
+}
+.c-reason-card._03 {
+  .c-reason-card__image {
+    @media (--md) {
+      background-color: #fafafa;
+      img {
+        object-fit: contain;
+      }
     }
   }
 }

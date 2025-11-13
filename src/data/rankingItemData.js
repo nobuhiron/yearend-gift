@@ -15,7 +15,7 @@ export const rankingItemData = [
     index: 3,
     code: '000000000061',
     title: '京の現代名工・吉田利一作 <br>宇治玉露 [100g缶]',
-    price: '5,400',
+    price: '10,800',
   },
   {
     index: 4,
